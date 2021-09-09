@@ -186,8 +186,9 @@
                 background-color:coral;
                 padding:10px;
                 font-size:16px;
-                margin-bottom:30px;
+                margin:30px;
                 box-shadow:0 0 10px 0;
+                
             }
             input{
                 border-radius:3px;
@@ -209,6 +210,11 @@
                 padding:5px;
                 width:auto;
             }
+            .overflow{
+                overflow-y:scroll;
+                height:500px;
+                border-radius:5px;
+            }
         </style>
     </head>
     <body bgcolor="chocolate">
@@ -221,7 +227,7 @@
         <li class="forgodsake">
             <b>Ramflyers</b>
         </li>
-        <div style="margin-left: 896px;">
+        <div style="margin-left: 880px;">
         <li class="list">
             <a href="home.php">Home</a>
         </li>
@@ -269,7 +275,30 @@
         <img src="hubungi.png" width="32%" height="50%" class="tutul">
     </a>
     </div>
-<div class=kolomkomentar>
+
+    <div class=kolomkomentar>
+<b>
+            Kolom Komentar:
+</b>
+<div class="overflow">
+<div class="scroll">
+</p>
+        <?php
+        include("koneksi.php");
+        $query=mysqli_query($db,'SELECT * FROM komentar');
+        while($data=mysqli_fetch_array($query))
+        {
+            $nama = $data['nama'];
+            $subject= $data['subject'];
+            $pesan = $data['pesan'];
+            
+            echo '<div style="background-color:white;border-radius:5px;padding:10px;margin-bottom:10px;">';
+            echo "<p>Dari <b>".$nama."</b>:<br><hr width=200px align=left>Komentar:<br><br><b> $subject </b><br><br><i>$pesan</i> <br><br/>";
+            echo "<a class=komentar title='Hapus Pesan' href='hapus.php?id=" .$data['id']."'>[Hapus Komentar]</a><br><a class=komentar href='edit.php?id=".$data['id']."'>[Edit Komentar]</a> <br/></p></div>";
+        }
+        ?>
+        </div>
+        </div>
 <table>
             <form action="simpan.php" method="POST">
                 <tr>
@@ -322,26 +351,6 @@
         <br>
         </fieldset>
         <p>
-<b>
-            Kolom Komentar:
-</b>
-<div class="scroll">
-</p>
-        <?php
-        include("koneksi.php");
-        $query=mysqli_query($db,'SELECT * FROM komentar');
-        while($data=mysqli_fetch_array($query))
-        {
-            $nama = $data['nama'];
-            $subject= $data['subject'];
-            $pesan = $data['pesan'];
-            
-            echo '<div style="background-color:white;border-radius:5px;padding:10px;margin-bottom:10px;">';
-            echo "<p>Dari <b>".$nama."</b>:<br><hr width=200px align=left>Komentar:<br><br><b> $subject </b><br><br><i>$pesan</i> <br><br/>";
-            echo "<a class=komentar title='Hapus Pesan' href='hapus.php?id=" .$data['id']."'>[Hapus Komentar]</a><br><a class=komentar href='edit.php?id=".$data['id']."'>[Edit Komentar]</a> <br/></p></div>";
-        }
-        ?>
-        </div>
         </div>
         </div>
 </div>
