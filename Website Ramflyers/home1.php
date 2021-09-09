@@ -215,6 +215,9 @@
                 height:500px;
                 border-radius:5px;
             }
+            .space{
+                margin:10px;
+            }
         </style>
     </head>
     <body bgcolor="chocolate">
@@ -299,6 +302,7 @@
         ?>
         </div>
         </div>
+        <div class="space">
 <table>
             <form action="simpan.php" method="POST">
                 <tr>
@@ -353,6 +357,7 @@
         <p>
         </div>
         </div>
+    </div>
 </div>
 <div class="ukuran">
     <center>
