@@ -3,7 +3,7 @@
         <style>
             html{
                 overflow: hidden;
-                font-family:"Nunito Sans";
+                font-family:"Arial Black";
             }
             body{
                 background-color:grey;
@@ -15,7 +15,7 @@
                 padding:65px 25px 50px 25px;
                 margin-top:2px;
                 background-color:cyan;
-                font-family:"Nunito Sans";
+                font-family:"Arial Black";
                 height:40px;
                 text-align:center;
                 font-size:20px;
@@ -28,7 +28,7 @@
                 padding:50px 25px 50px 25px;
                 margin-top:2px;
                 background-color:grey;
-                font-family:"Nunito Sans";
+                font-family:"Arial Black";
                 height:auto;
                 text-align:center;
                 font-size:40px;
@@ -52,7 +52,7 @@
             }
             .kiri{
                 background-color:white;
-                width:24.7%;
+                width:28.7%;
                 float:left;
                 height:100%;
                 margin-left:-7px;
