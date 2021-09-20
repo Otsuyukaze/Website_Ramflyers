@@ -24,13 +24,16 @@ if( mysqli_num_rows($query) < 1 ){
         }
         </style>
 </head>
-<body bgcolor=coral>
+<body bgcolor=coral>           
+    <form action="prosesedit.php" method="POST">
         <fieldset>
             <center>
             <h1>Edit Komentar</h1>
 </center>
         <table>
-            <form action="prosesedit.php" method="POST">
+ 
+ 
+                <input type="hidden" name="id" value="<?php echo$data['id']?>">
                 <tr>
                     <td>
                         <label for="nama">
@@ -75,10 +78,10 @@ if( mysqli_num_rows($query) < 1 ){
                     <td>
                     <input type="submit" value="Daftar" name="daftar" />
                     </td>
-                </tr>
+                </tr>  </fieldset>
             </form>
         </table>
         <br>
-        </fieldset>
+      
 </body>
 </html>
