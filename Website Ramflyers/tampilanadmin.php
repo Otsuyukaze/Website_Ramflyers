@@ -52,12 +52,29 @@
             }
             .kiri{
                 background-color:white;
-                width:25%;
+                width:24.7%;
+                float:left;
                 height:100%;
                 margin-left:-7px;
             }
             .how{
                 padding:10px;
+            }
+            .kanan{
+                background-color:white;
+                height:72.5%;
+                width:71.8%;
+                float:left;
+                margin:20px;
+                padding:10px;
+                text-align:center;
+                
+            }
+            .tampilan{
+                background-color:grey;
+                width:101%;
+                height: 100%;
+                display:flex;
             }
             </style>
 </head>
@@ -84,6 +101,7 @@ Log Out
     </a>
         </ul>
 </div>
+<div class=tampilan>
 <div class=kiri>
 <div class=how>
     How To Use:
@@ -106,7 +124,26 @@ Log Out
             Log Out:<br>
             Untuk Keluar dari tampilan ini dan kembali ke login<br>
         </li>
+        </ul>
         </div>
-    <div>
+        </div>
+
+        <div class=kanan>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            Selamat Datang di Tampilan Admin<br>
+            Silahkan Memilih Salah Satu Dari 3 Opsi Diatas
+        </div>
+        </div>
 </body>
 </html>
