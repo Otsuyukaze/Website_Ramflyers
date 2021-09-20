@@ -77,11 +77,15 @@
                 display:flex;
             }
             input{
-                width: 100%;
+                width: 150%;
                 padding:5px;
             }
             select{
-                width:100%;
+                width:150%;
+                padding:5px;
+            }
+            textarea{
+                width:150%;
                 padding:5px;
             }
             </style>
@@ -130,6 +134,11 @@ Log Out
             <br>
             <center>
             <form action="simpan.php" method="POST">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
                     <br>
                     <table>
                     <td>
