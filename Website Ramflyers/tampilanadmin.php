@@ -5,15 +5,23 @@
                 float:left;
                 text-decoration:none;
                 list-style:none;
-                padding:25px;
-                margin-top:0px;
+                padding:50px 25px 50px 25px;
+                margin-top:2px;
                 background-color:grey;
                 font-family:"Nunito Sans";
-                height:40px;
+                height:auto;
+                text-align:center;
+                font-size:20px;
+            
             }
             .top{
                 margin-left:-50px;
                 margin-top:-10px;
+            }
+            a{
+                
+                text-decoration:none;
+                color:black;
             }
             </style>
 </head>
@@ -21,14 +29,24 @@
     <div class=top>
         <ul>
             <li class=header>
-                <h1> ADMINISTRATOR </h1>
+                <b> ADMINISTRATOR </b>
+        </li> 
+        <a href="list.php">
+<li class=header>
+   List Tutorial
+</li>
+</a>
+<a href="tambahtutorial.php">
+<li class=header>
+    Tambahkan Tutorial
+</li> 
+</a>
+   <a href="admin.php">
+<li class=header>
+Log Out
         </li>
-<li class=header>
-    A
-</li>
-<li class=header>
-    B
-</li>
+    </a>
+        </ul>
 </div>
 </body>
 </html>
