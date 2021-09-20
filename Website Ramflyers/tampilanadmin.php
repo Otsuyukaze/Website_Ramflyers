@@ -5,18 +5,36 @@
                 float:left;
                 text-decoration:none;
                 list-style:none;
+                padding:65px 25px 50px 25px;
+                margin-top:2px;
+                background-color:cyan;
+                font-family:"Nunito Sans";
+                height:40px;
+                text-align:center;
+                font-size:20px;
+            
+            }
+            .header2{
+                float:left;
+                text-decoration:none;
+                list-style:none;
                 padding:50px 25px 50px 25px;
                 margin-top:2px;
                 background-color:grey;
                 font-family:"Nunito Sans";
                 height:auto;
                 text-align:center;
-                font-size:20px;
+                font-size:40px;
             
             }
             .top{
                 margin-left:-50px;
-                margin-top:-10px;
+                margin-top:-30px;
+                margin-bottom:0px;
+                background-color:cyan;
+                width:100%;
+                height:100px;
+                display:flex;
             }
             a{
                 
@@ -28,7 +46,7 @@
 <body>
     <div class=top>
         <ul>
-            <li class=header>
+            <li class=header2>
                 <b> ADMINISTRATOR </b>
         </li> 
         <a href="list.php">
