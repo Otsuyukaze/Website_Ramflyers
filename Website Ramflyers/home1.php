@@ -232,13 +232,13 @@
         </li>
         <div style="margin-left: 880px;">
         <li class="list">
-            <a href="home.php">Home</a>
+            <a href="home1.php">Home</a>
         </li>
         <li class="list">
-            <a href="home.php">Info</a>
+            <a href="home1.php">Info</a>
         </li>
         <li class="list">
-            <a href="home.php">Hubungi Kami</a>
+            <a href="home1.php">Hubungi Kami</a>
         </li>
         <li class="list">
         <a href="search.html">
