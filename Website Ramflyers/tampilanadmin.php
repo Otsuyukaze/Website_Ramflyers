@@ -3,6 +3,7 @@
         <style>
             html{
                 overflow: hidden;
+                font-family:"Nunito Sans";
             }
             body{
                 background-color:grey;
@@ -42,7 +43,6 @@
                 width:150%;
                 height:173px;
                 display:flex;
-                position:fixed;
 
             }
             a{
@@ -56,7 +56,9 @@
                 height:100%;
                 margin-left:-7px;
             }
-
+            .how{
+                padding:10px;
+            }
             </style>
 </head>
 <body>
@@ -83,7 +85,28 @@ Log Out
         </ul>
 </div>
 <div class=kiri>
-
+<div class=how>
+    How To Use:
+    <ul>
+        <li>
+            Di atas ada 3 opsi, yaitu:<br>
+            "List Tutorial"<br>
+            "Tambahkan Tutorial"<br>
+            "Log Out"<br>
+        </li>
+        <li>
+            List Tutorial:<br>
+            Untuk Melihat List Tutorial Yang Sudah Anda Buat<br>
+        </li>
+        <li>
+            Tambahkan Tutorial:<br>
+            Untuk Menambahkan List yang ada di List Tutorial<br>
+        </li>
+        <li>
+            Log Out:<br>
+            Untuk Keluar dari tampilan ini dan kembali ke login<br>
+        </li>
+        </div>
     <div>
 </body>
 </html>
