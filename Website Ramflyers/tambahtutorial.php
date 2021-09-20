@@ -81,7 +81,7 @@
 <body>
     <div class=top>
         <ul>
-        <a href="tampilanadmin.php">
+            <a href="tampilanadmin.php">
             <li class=header2>
                 <b> ADMINISTRATOR </b>
         </li>
@@ -108,23 +108,11 @@ Log Out
 <div class=how>
     How To Use:
     <ul>
-        <li>
-            Di atas ada 3 opsi, yaitu:<br>
-            "List Tutorial"<br>
-            "Tambahkan Tutorial"<br>
-            "Log Out"<br>
+    <li>
+            Masukkan Judul, Isi Topik, dan tentukan Kategori
         </li>
         <li>
-            List Tutorial:<br>
-            Untuk Melihat List Tutorial Yang Sudah Anda Buat<br>
-        </li>
-        <li>
-            Tambahkan Tutorial:<br>
-            Untuk Menambahkan List yang ada di List Tutorial<br>
-        </li>
-        <li>
-            Log Out:<br>
-            Untuk Keluar dari tampilan ini dan kembali ke login<br>
+            Tekan Tombol Add untuk menambahkan Tutorial baru
         </li>
         </ul>
         </div>
@@ -132,19 +120,66 @@ Log Out
 
         <div class=kanan>
             <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            
-            Selamat Datang di Tampilan Admin<br>
-            Silahkan Memilih Salah Satu Dari 3 Opsi Diatas
+            <center>
+            <form action="simpan.php" method="POST">
+                    <br>
+                    <table>
+                    <td>
+                        <label for="judul">
+                        Judul
+                    </td>
+                    <td>
+                        :
+                    </td>
+                    </label>
+                    <td>
+                        <input type="text" name="judul" placeholder="masukkan judul anda">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="topik">
+                        Topik
+                    </td>
+                    <td>
+                        :
+                    </td>
+                    </label>
+                    <td>
+                        <textarea name="topik"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="kategori">
+                        Kategori
+                    </td>
+                    <td>
+                        :
+                    </td>
+                    </label>
+                    <td>
+                        <select name="kategori">
+                            <option>Select</option>
+                            <option>Edukasi</option>
+                            <option>Kuliner</option>
+                            <option>Olahraga</option>
+                            <option>Programming</option>
+                            <option>Desain Grafis</option>
+                            <option>Elektronik</option>
+                            <option>Fashion</option>
+                            <option>Gaming</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <input type="submit" value="Add" name="add" style="background-color: rgb(60, 184, 201); color: white; border-style: solid; border-radius: 6px; border-color: rgb(0, 0, 0);">
+                    </td>
+                </table>
+                <br>
+                </form>
+        </center>
         </div>
         </div>
 </body>

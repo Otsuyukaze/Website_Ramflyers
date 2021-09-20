@@ -68,13 +68,16 @@
                 margin:20px;
                 padding:10px;
                 text-align:center;
-                
             }
             .tampilan{
                 background-color:grey;
                 width:101%;
                 height: 100%;
                 display:flex;
+            }
+            a.biru{
+                text-decoration:none;
+                color: blue;
             }
             </style>
 </head>
@@ -109,22 +112,7 @@ Log Out
     How To Use:
     <ul>
         <li>
-            Di atas ada 3 opsi, yaitu:<br>
-            "List Tutorial"<br>
-            "Tambahkan Tutorial"<br>
-            "Log Out"<br>
-        </li>
-        <li>
-            List Tutorial:<br>
-            Untuk Melihat List Tutorial Yang Sudah Anda Buat<br>
-        </li>
-        <li>
-            Tambahkan Tutorial:<br>
-            Untuk Menambahkan List yang ada di List Tutorial<br>
-        </li>
-        <li>
-            Log Out:<br>
-            Untuk Keluar dari tampilan ini dan kembali ke login<br>
+            List Tutorial hanya digunakan untuk melihat, mengedit, dan mendelete tutorial yang sudah di input
         </li>
         </ul>
         </div>
@@ -142,9 +130,7 @@ Log Out
             <br>
             <br>
             <br>
-            
-            Selamat Datang di Tampilan Admin<br>
-            Silahkan Memilih Salah Satu Dari 3 Opsi Diatas
+            <a>Anda belum membuat Tutorial, tekan</a><a href="tambahtutorial.php" class="biru"> disini </a><a>untuk menambahkannya!</a>
         </div>
         </div>
 </body>
