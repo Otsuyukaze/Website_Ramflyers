@@ -1,6 +1,12 @@
 <html>
     <head>
         <style>
+            html{
+                overflow: hidden;
+            }
+            body{
+                background-color:grey;
+            }
             .header{
                 float:left;
                 text-decoration:none;
@@ -28,19 +34,29 @@
             
             }
             .top{
-                margin-left:-50px;
+                margin-left:-48px;
                 margin-top:-30px;
                 margin-bottom:0px;
+                margin-right:0px;
                 background-color:cyan;
-                width:100%;
-                height:100px;
+                width:150%;
+                height:173px;
                 display:flex;
+                position:fixed;
+
             }
             a{
                 
                 text-decoration:none;
                 color:black;
             }
+            .kiri{
+                background-color:white;
+                width:25%;
+                height:100%;
+                margin-left:-7px;
+            }
+
             </style>
 </head>
 <body>
@@ -66,7 +82,8 @@ Log Out
     </a>
         </ul>
 </div>
-<div>
+<div class=kiri>
+
     <div>
 </body>
 </html>
