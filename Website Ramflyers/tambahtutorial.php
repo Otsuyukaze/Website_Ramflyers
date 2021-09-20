@@ -76,6 +76,14 @@
                 height: 100%;
                 display:flex;
             }
+            input{
+                width: 100%;
+                padding:5px;
+            }
+            select{
+                width:100%;
+                padding:5px;
+            }
             </style>
 </head>
 <body>
@@ -133,7 +141,7 @@ Log Out
                     </td>
                     </label>
                     <td>
-                        <input type="text" name="judul" placeholder="masukkan judul anda">
+                        <input type="text" name="judul" placeholder="Masukkan Judul Anda">
                     </td>
                 </tr>
                 <tr>
