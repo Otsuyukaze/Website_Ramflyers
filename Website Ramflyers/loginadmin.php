@@ -24,10 +24,10 @@
         </style>
     </head>
     <body>
-        <form class="fm">
-            <p><b>Admin Name :</b> <input type="text" name="nama" size="25"></p>
-            <p><b>Password&nbsp;&nbsp;&nbsp;:</b> <input type="text" name="password" size="25"></p><br>
-            <p><input type="submit" name="login" value="Masuk" style="background-color: grey; color: white; border-style: solid; border-color: black; width: 125px; height: 35px;"></p>
+        <form class="fm" action="prosesloginadmin.php" method="POST">
+            <p><b>Username :</b> <input type="text" name="username" size="25"></p>
+            <p><b>&nbsp;Password&nbsp;:</b> <input type="text" name="password" size="25"></p><br>
+            <p><input type="submit" name="logins" value="Masuk" style="background-color: grey; color: white; border-style: solid; border-color: black; width: 125px; height: 35px;"></p>
         </form>
     </body>
 </html>

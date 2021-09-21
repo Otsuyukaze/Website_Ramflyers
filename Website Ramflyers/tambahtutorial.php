@@ -108,7 +108,7 @@
     Tambahkan Tutorial
 </li> 
 </a>
-   <a href="admin.php">
+   <a href="loginadmin.php">
 <li class=header>
 Log Out
         </li>
