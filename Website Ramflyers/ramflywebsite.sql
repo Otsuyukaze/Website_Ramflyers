@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 09, 2021 at 07:13 AM
+-- Generation Time: Sep 21, 2021 at 05:39 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -24,6 +24,25 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `admin`
+--
+
+CREATE TABLE `admin` (
+  `id` int(11) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`id`, `username`, `password`) VALUES
+(1, 'admin', 'd41d8cd98f00b204e9800998ecf8427e');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `komentar`
 --
 
@@ -39,7 +58,8 @@ CREATE TABLE `komentar` (
 --
 
 INSERT INTO `komentar` (`id`, `nama`, `subject`, `pesan`) VALUES
-(5, 'Janssen', 'Bagus', '123');
+(7, 'Janssen', 'Bagus', '12345'),
+(8, 'Janssenss', 'Bagusss', '123');
 
 -- --------------------------------------------------------
 
@@ -59,12 +79,17 @@ CREATE TABLE `ramflyers` (
 
 INSERT INTO `ramflyers` (`id`, `username`, `password`) VALUES
 (1, 'ramflyers', 'd226925c0a0b036a978940ac443062e1'),
-(2, 'Janssen', '202cb962ac59075b964b07152d234b70'),
-(3, 'Janssen', '202cb962ac59075b964b07152d234b70');
+(2, 'Janssen', '202cb962ac59075b964b07152d234b70');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `komentar`
@@ -83,16 +108,22 @@ ALTER TABLE `ramflyers`
 --
 
 --
+-- AUTO_INCREMENT for table `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT for table `komentar`
 --
 ALTER TABLE `komentar`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `ramflyers`
 --
 ALTER TABLE `ramflyers`
-  MODIFY `id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
