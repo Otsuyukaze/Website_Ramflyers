@@ -177,7 +177,7 @@ Log Out
                     </label>
                     <td>
                         <select name="kategori">
-                            <option>Select</option>
+                            <option style="display:none">Select</option>
                             <option>Edukasi</option>
                             <option>Kuliner</option>
                             <option>Olahraga</option>
