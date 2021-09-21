@@ -108,7 +108,7 @@
     Tambahkan Tutorial
 </li> 
 </a>
-   <a href="admin.php">
+   <a href="loginadmin.php">
 <li class=header>
 Log Out
         </li>
@@ -177,7 +177,7 @@ Log Out
                     </label>
                     <td>
                         <select name="kategori">
-                            <option>Select</option>
+                            <option style="display:none">Select</option>
                             <option>Edukasi</option>
                             <option>Kuliner</option>
                             <option>Olahraga</option>
