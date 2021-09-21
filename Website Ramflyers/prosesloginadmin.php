@@ -1,7 +1,7 @@
 <?php
 session_start();
 include "koneksi.php";
-if(isset($_POST['logins']))
+if(isset($_POST['loginadmin']))
 
 $username=$_POST['username'];
 $password=md5($_POST['password']);

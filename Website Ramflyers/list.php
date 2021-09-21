@@ -79,6 +79,21 @@
                 text-decoration:none;
                 color: blue;
             }
+            .button{
+                width:25px;
+                height:25px;
+            }
+            .under{
+                border-style:none none solid none;
+                border-color:grey;
+                border-width:2px;
+            }
+            td{
+                padding:10px;
+            }
+            table{
+                margin:20px;
+            }
             </style>
 </head>
 <body>
@@ -119,18 +134,26 @@ Log Out
         </div>
 
         <div class=kanan>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <a>Anda belum membuat Tutorial, tekan</a><a href="tambahtutorial.php" class="biru"> disini </a><a>untuk menambahkannya!</a>
+        <div style="border-color:grey;border-style:solid;padding:10px;margin:10px;text-align:left;height:80%;overflow-y:scroll;">
+        <table><tr><td class="under">Judul</td><td class="under">Topik</td><td class="under">Kategori</td><td class="under">Hapus</td><td class="under">Edit List</td></tr>
+            <?php
+        include("koneksi.php");
+        $query=mysqli_query($db,'SELECT * FROM tutorial');
+        while($dataadmin=mysqli_fetch_array($query))
+        {
+            $judul = $dataadmin['judul'];
+            $topik= $dataadmin['topik'];
+            $kategori = $dataadmin['kategori'];
+
+            echo '<tr><td class="under">'.$judul.'</td><td class="under">' .$topik.'</td><td class="under">'.$kategori.'</td>';
+            echo '<td class="under"><a class=komentar title="Hapus Tutorial" href="hapustutorial.php?id=' .$dataadmin['id'].'"><center><img class="button" src="delete_button_black.png"></center></a></td><td class="under"><a class=komentar href="edittutorial.php?id='.$dataadmin['id'].'"><center><img class="button" src="edit_button_black.png"></center></a></td></div>';
+        }
+        ?>
+        </table>
+        </div>
+        <div class=textbawah>
+            <a>Mau Buat Lebih banyak? Tekan </a><a href="tambahtutorial.php" class="biru"> disini </a><a>untuk menambahkannya!</a>
+    </div>
         </div>
         </div>
 </body>

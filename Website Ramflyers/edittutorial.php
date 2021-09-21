@@ -1,3 +1,16 @@
+<?php
+include("koneksi.php");
+if( !isset($_GET['id']) ){
+    header('Location: list.php');
+}$id = $_GET['id'];
+$sql = "SELECT * FROM tutorial WHERE id=$id";
+$query = mysqli_query($db, $sql);
+$dataadmin = mysqli_fetch_assoc($query);
+if( mysqli_num_rows($query) < 1 ){
+    die("data tidak ditemukan...");
+}
+    ?>
+
 <html>
     <head>
         <style>
@@ -133,7 +146,8 @@ Log Out
         <div class=kanan>
             <br>
             <center>
-            <form action="simpantutorial.php" method="POST">
+            <form action="prosesedittutorial.php" method="POST">
+            <input type="hidden" name="id" value="<?php echo $dataadmin['id']?>">
                     <br>
                     <br>
                     <br>
@@ -150,7 +164,7 @@ Log Out
                     </td>
                     </label>
                     <td>
-                        <input type="text" name="judul" placeholder="Masukkan Judul Anda" required>
+                        <input type="text" name="judul" placeholder="Masukkan Judul Anda" value="<?php echo $dataadmin['judul'] ?>" required>
                     </td>
                 </tr>
                 <tr>
@@ -163,7 +177,7 @@ Log Out
                     </td>
                     </label>
                     <td>
-                        <textarea name="topik"></textarea>
+                        <textarea name="topik"><?php echo $dataadmin['topik'] ?></textarea>
                     </td>
                 </tr>
                 <tr>
@@ -176,16 +190,17 @@ Log Out
                     </td>
                     </label>
                     <td>
+            <?php $kategori = $dataadmin['kategori']; ?>
                         <select name="kategori" required>
                             <option style="display:none">Select</option>
-                            <option>Edukasi</option>
-                            <option>Kuliner</option>
-                            <option>Olahraga</option>
-                            <option>Programming</option>
-                            <option>Desain Grafis</option>
-                            <option>Elektronik</option>
-                            <option>Fashion</option>
-                            <option>Gaming</option>
+                            <option <?php echo ($kategori == 'Edukasi') ? "selected": "" ?>>Edukasi</option>
+                            <option <?php echo ($kategori == 'Kuliner') ? "selected": "" ?>>Kuliner</option>
+                            <option <?php echo ($kategori == 'Olahraga') ? "selected": "" ?>>Olahraga</option>
+                            <option <?php echo ($kategori == 'Programming') ? "selected": "" ?>>Programming</option>
+                            <option <?php echo ($kategori == 'Desain Grafis') ? "selected": "" ?>>Desain Grafis</option>
+                            <option <?php echo ($kategori == 'Elektronik') ? "selected": "" ?>>Elektronik</option>
+                            <option <?php echo ($kategori == 'Fashion') ? "selected": "" ?>>Fashion</option>
+                            <option <?php echo ($kategori == 'Gaming') ? "selected": "" ?>>Gaming</option>
                         </select>
                     </td>
                 </tr>
