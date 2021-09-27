@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Form Login Admin</title>
+        <title>Form Login</title>
         <style>
             @keyframes move_wave {
     0% {

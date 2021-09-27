@@ -76,7 +76,7 @@ if( mysqli_num_rows($query) < 1 ){
                 </tr>
                 <tr>
                     <td>
-                    <input type="submit" value="Daftar" name="daftar" />
+                    <input type="submit" value="Edit" name="edit"/>
                     </td>
                 </tr>  </fieldset>
             </form>

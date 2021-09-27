@@ -1,6 +1,6 @@
 <?php
 include("koneksi.php");
-if(isset($_POST['daftar'])){
+if(isset($_POST['edit'])){
     $id = $_POST['id'];
     $nama = $_POST['nama'];
     $subject = $_POST['subject'];
