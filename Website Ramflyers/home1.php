@@ -5,6 +5,53 @@
         <title>
             Home | Ramflyers
         </title>
+                
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+        <script>
+
+$(document).ready(function() {
+            document.getElementById("test").style.visibility ="hidden";
+            $(".toggle-button").click(function() {
+$(this).parent().find("input").slideToggle(function() {
+    document.getElementById("myInput").style.visibility ="visible";
+  
+    
+      
+$(this).parent().find("a").slideToggle(function() {
+    document.getElementById("submit").style.visibility ="visible";
+});  
+});  
+$(".toggle-enter").click(function(){
+      $(this).parent().find("ul").slideToggle(function(){
+          document.getElementById("myUL").style.visibility ="visible";
+      });
+  });
+});
+        })
+        </script>
+        <script>
+            function myFunction() {
+              // Declare variables
+              var input, filter, ul, li, a, i, txtValue;
+              input = document.getElementById('myInput');
+              filter = input.value.toUpperCase();
+              ul = document.getElementById("myUL");
+              li = ul.getElementsByTagName('li');
+            
+              // Loop through all list items, and hide those who don't match the search query
+              for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                  li[i].style.display = "";
+                } else {
+                  li[i].style.display = "none";
+                }
+              }
+}
+            
+            </script>
         <style>
             .header{
                 z-index: 999;
@@ -178,6 +225,52 @@
             .loginbawah:hover{
                 background-color:rgb(53, 54, 54);
             }
+            .searchbar #test li{
+                line-height: 25px;
+                list-style: none;
+            }
+            .searchbar #test{
+                position:absolute;
+                top:90px;
+                right:25px;
+                margin-top:10px;
+                padding-inline-start: 20px;
+            }
+            .searchbar{
+                max-width: 35px;
+            }
+            .searchbar input{
+                height: 30px;
+                width:180px;
+                border-style: solid;
+                border-color:orange;
+                border-width: 5px;;
+                border-radius: 10px 10px 0px 0px;
+                font-family: "Nunito Sans";
+                padding:5px;
+            }
+            .searchbar #submit{
+                background-color: white;
+                color:black;
+                border-width: 5px;
+                border-style: solid;
+                border-color:orange;
+                padding:5px;
+                border-radius: 30px;
+            }
+            #myUL{
+                background-color: yellow;
+                padding:10px;
+                border-style:solid;
+                border-color: orange;
+                border-width: 5px;
+                border-radius: 0px 10px 10px 10px;
+                font-family: "Nunito Sans";
+            }
+            #myUL a{
+
+                color: black;
+            }
             .komentar{
                 color: black;
             }
@@ -239,12 +332,31 @@
         </li>
         <li class="list">
             <a href="home1.php">Hubungi Kami</a>
-        </li>
+        </li>        
         <li class="list">
-        <a href="search.html">
-          <img src="search_button.png" width="26" height="26">
-        </a>
-        </li>
+            <div class=searchbar>
+            <a class="toggle-button" href="#">
+                    <img src="search_button.png" width="26" height="26">
+                </a>
+                        <div id="test">
+                        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for tutorial">
+                      <a class="toggle-enter" id="submit" href="#">CARI</a>
+                    
+                      <ul id="myUL">
+                          <li><a href="#">Tutorial 1</a></li>
+                          <li><a href="#">Tutorial 2</a></li>
+                        
+                          <li><a href="#">Tutorial 3</a></li>
+                          <li><a href="#">Tutorial 4</a></li>
+                        
+                          <li><a href="#">Tutorial 5</a></li>
+                          <li><a href="#">Tutorial 6</a></li>
+                          <li><a href="#">Tutorial 7</a></li>
+                        </ul>
+                      </div>
+            </div>
+                </li>
+
         <li class="list">
         <a href="menu.html">
           <img src="more_button.png" width="30" height="25">
