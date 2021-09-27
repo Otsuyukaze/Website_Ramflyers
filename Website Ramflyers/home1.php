@@ -155,7 +155,6 @@ $(".toggle-enter").click(function(){
                 width:30%;
                 height:adjust;
                 padding: 10px;
-                float: left;
                 box-shadow: -20px 20px 0 0 black;
           
             }
@@ -284,17 +283,19 @@ $(".toggle-enter").click(function(){
                 
             }
             input{
-                border-radius:3px;
                 outline:none;
-                border-width:0px;
+                border-style:none none solid none;
+                border-width:2px;
+                border-color:black;
                 padding:5px;
                 width:320px;
             }
             textarea{
-                border-radius:3px;
-                outline:none;
-                border-width:0px;
+                border-width:2px;
                 padding:5px;
+                border-color:black;
+                border-style:none none solid none;
+                outline:none;
             }
             input[type=submit]{
                 border-radius:3px;
@@ -303,6 +304,9 @@ $(".toggle-enter").click(function(){
                 padding:5px;
                 width:auto;
             }
+            input[type=submit]:hover{
+                cursor:pointer;
+            }
             .overflow{
                 overflow-y:scroll;
                 height:500px;
@@ -310,6 +314,11 @@ $(".toggle-enter").click(function(){
             }
             .space{
                 margin:10px;
+                background-color:white;
+                padding:10px;
+                border-radius:10px;
+                border-style:solid;
+                border-color:black;
             }
         </style>
     </head>
@@ -407,7 +416,7 @@ $(".toggle-enter").click(function(){
             $subject= $data['subject'];
             $pesan = $data['pesan'];
             
-            echo '<div style="background-color:white;border-radius:5px;padding:10px;margin-bottom:10px;">';
+            echo '<div style="background-color:white;border-radius:5px;padding:10px;margin-bottom:10px;margin-right:10px;border-style:solid;border-color:black;">';
             echo "<p>Dari <b>".$nama."</b>:<br><hr width=200px align=left>Komentar:<br><br><b> $subject </b><br><br><i>$pesan</i> <br><br/>";
             echo "<a class=komentar title='Hapus Pesan' href='hapus.php?id=" .$data['id']."'>[Hapus Komentar]</a><br><a class=komentar href='edit.php?id=".$data['id']."'>[Edit Komentar]</a> <br/></p></div>";
         }
