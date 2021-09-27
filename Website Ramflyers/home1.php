@@ -367,7 +367,7 @@ $(".toggle-enter").click(function(){
                 </li>
 
         <li class="list">
-        <a href="menu.html">
+        <a href="#">
           <img src="more_button.png" width="30" height="25">
         </a>
         </li>
