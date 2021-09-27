@@ -337,7 +337,7 @@ $(".toggle-enter").click(function(){
             <a href="home1.php">Home</a>
         </li>
         <li class="list">
-            <a href="home1.php">Info</a>
+            <a href="info1.html">Info</a>
         </li>
         <li class="list">
             <a href="home1.php">Hubungi Kami</a>
@@ -392,7 +392,7 @@ $(".toggle-enter").click(function(){
     <a href="community.html">
         <img src="tutorial.png" width="32%" height="50%" class="tutul">
     </a>
-    <a href="store.html">
+    <a href="info1.html">
         <img src="info.png" width="32%" height="50%" class="tutul">
     </a>
     <a href="memes.html">
