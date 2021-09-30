@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 21, 2021 at 05:39 AM
--- Server version: 10.4.17-MariaDB
--- PHP Version: 8.0.2
+-- Waktu pembuatan: 30 Sep 2021 pada 16.03
+-- Versi server: 10.4.17-MariaDB
+-- Versi PHP: 8.0.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `admin`
+-- Struktur dari tabel `admin`
 --
 
 CREATE TABLE `admin` (
@@ -34,7 +34,7 @@ CREATE TABLE `admin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `admin`
+-- Dumping data untuk tabel `admin`
 --
 
 INSERT INTO `admin` (`id`, `username`, `password`) VALUES
@@ -43,7 +43,30 @@ INSERT INTO `admin` (`id`, `username`, `password`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `komentar`
+-- Struktur dari tabel `hubungi`
+--
+
+CREATE TABLE `hubungi` (
+  `id` int(11) NOT NULL,
+  `nama` varchar(69) NOT NULL,
+  `email` varchar(69) NOT NULL,
+  `subject` varchar(69) NOT NULL,
+  `message` varchar(696) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `hubungi`
+--
+
+INSERT INTO `hubungi` (`id`, `nama`, `email`, `subject`, `message`) VALUES
+(1, 'Hendy Tandika', 'hendytandika25@gmail.com', 'Test 123', 'Semoga berhasil ya ges ya :)'),
+(2, 'William Doang', 'williamgolden@gmail.com', 'Saya Bega dan Saya Bangga', 'Terimakasih buat lo semua ******t'),
+(3, '', '', '', '');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `komentar`
 --
 
 CREATE TABLE `komentar` (
@@ -54,76 +77,64 @@ CREATE TABLE `komentar` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `komentar`
+-- Dumping data untuk tabel `komentar`
 --
 
 INSERT INTO `komentar` (`id`, `nama`, `subject`, `pesan`) VALUES
-(7, 'Janssen', 'Bagus', '12345'),
-(8, 'Janssenss', 'Bagusss', '123');
+(5, 'Janssen', 'Bagus', '123'),
+(0, 'Hendy Tandika', 'just a message', 'Wd good'),
+(0, 'William', 'Salam Bega', 'Hendy Paling jago');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ramflyers`
+-- Struktur dari tabel `ramflyers`
 --
 
 CREATE TABLE `ramflyers` (
   `id` int(2) NOT NULL,
   `username` varchar(30) NOT NULL,
-  `password` varchar(100) NOT NULL
+  `password` varchar(40) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `ramflyers`
+-- Dumping data untuk tabel `ramflyers`
 --
 
 INSERT INTO `ramflyers` (`id`, `username`, `password`) VALUES
-(1, 'ramflyers', 'd226925c0a0b036a978940ac443062e1'),
-(2, 'Janssen', '202cb962ac59075b964b07152d234b70');
+(1, 'ramflyers', 'd226925c0a0b036a978940ac443062e1');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `admin`
+-- Indeks untuk tabel `hubungi`
 --
-ALTER TABLE `admin`
+ALTER TABLE `hubungi`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `komentar`
---
-ALTER TABLE `komentar`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `ramflyers`
+-- Indeks untuk tabel `ramflyers`
 --
 ALTER TABLE `ramflyers`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `admin`
+-- AUTO_INCREMENT untuk tabel `hubungi`
 --
-ALTER TABLE `admin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+ALTER TABLE `hubungi`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `komentar`
---
-ALTER TABLE `komentar`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
-
---
--- AUTO_INCREMENT for table `ramflyers`
+-- AUTO_INCREMENT untuk tabel `ramflyers`
 --
 ALTER TABLE `ramflyers`
-  MODIFY `id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
