@@ -121,7 +121,7 @@ $(".toggle-enter").click(function(){
                 height: 30px;
                 width:180px;
                 border-style: solid;
-                border-color:orange;
+                border-color:pink;
                 border-width: 5px;;
                 border-radius: 10px 10px 0px 0px;
                 font-family: "Nunito Sans";
@@ -132,15 +132,15 @@ $(".toggle-enter").click(function(){
                 color:black;
                 border-width: 5px;
                 border-style: solid;
-                border-color:orange;
+                border-color:pink;
                 padding:5px;
                 border-radius: 30px;
             }
             #myUL{
-                background-color: yellow;
+                background-color: black;
                 padding:10px;
                 border-style:solid;
-                border-color: orange;
+                border-color: black;
                 border-width: 5px;
                 border-radius: 0px 10px 10px 10px;
                 font-family: "Nunito Sans";
@@ -149,14 +149,16 @@ $(".toggle-enter").click(function(){
                 color: black;
             }
             body{
-                background-color: chocolate;
                 color: rgb(0, 0, 0);
                 max-width: 200%;
                 margin:auto;
+                background-image: url('background-1939128.jpg');
+                background-size: 1590px 1300px;
+                color: white;
             }
             .box{
                 border-radius: 10px;
-                background-color: rgb(255, 87, 25);
+                background-color: rgb(242, 120, 141);
                 width: 30%;
                 padding: 15px;
                 box-shadow: -10px 10px 0 0 black;
@@ -167,12 +169,12 @@ $(".toggle-enter").click(function(){
                 margin-top: 28px;
             }
             .list2{
-                background-color: rgb(230, 84, 31);
+                background-color: rgb(252, 130, 151);
                 padding: 5px;
                 box-shadow: -3px 3px 0 0 black;
             }
             .list2:hover{
-                background-color: rgb(255, 128, 82);
+                background-color: rgb(rgb(262, 150, 161));
                 box-shadow: -1px 1px 0 0 black;
                 cursor: pointer;
             }
@@ -189,6 +191,7 @@ $(".toggle-enter").click(function(){
                 border-radius: 10px;
                 padding-right: -10px;
                 margin-bottom: 50px;
+                color: black;
             }
             .janssen{
                 background-image: url('ching_chong.png');
@@ -203,6 +206,7 @@ $(".toggle-enter").click(function(){
                 border-radius: 10px;
                 padding-right: -10px;
                 margin-bottom: 50px;
+                color: black;
             }
             .richard{
                 background-image: url('Screenshot_2021-09-28-18-08-08-87_41be58ba4732ca6a1097a3b2524cd3ac.jpg');
@@ -265,9 +269,15 @@ $(".toggle-enter").click(function(){
                 font-size: 20px;
                 font-family: "Nunito Sans";
             }
+            .ukuran{
+                font-size: 20px;
+                font-family: "Nunito Sans";
+                background-color: black;
+                color: white;
+            }
         </style>
     </head>
-    <body background="63d45b74bf710fdaac29c8c9c64b6fe9.jpg">
+    <body>
         <div class="header">
             <div>
                 <img class="img" src="logo-removebg-preview.png" width="75px" height="75px">
@@ -360,6 +370,12 @@ $(".toggle-enter").click(function(){
         <p class="sz">Hendy Tandika</p>
         <p class="f">Hendy adalah murid SMK Cinta Kasih Tzu Chi sejak Sekolah Menengah Kejurusan, Hendy bersekolah di Tzu Chi selama 1,5 tahun, sama seperti Richard, Hendy dan Richard sudah sekolah bersama dari playgroup hingga sekolah dasar. Hendy juga kelas XI RPL 1 sekelas dengan William, Janssen, dan Richard. Ia memilih jurusan RPL karena menurutnya kode itu keren.</p>
         </div>
-        <footer align="center">2021 Ramfly Ramsend Incorporation. Ramflyers and the Ramflyers Logo are among our registered and unregistered trademarks in Southeast Asia and other countries.</footer><br><br><br>
+        <div class="ukuran">
+    <center>
+        <br>
+        ©2021 Ramfly Ramsend Incorporation. Ramflyers and the Ramflyers Logo are among our registered and unregistered trademarks in Southeast Asia and other countries.
+        <br><br>
+    </center>
+</div>
     </body>
 </html>
