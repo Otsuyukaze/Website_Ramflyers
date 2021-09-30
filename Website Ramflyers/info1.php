@@ -7,22 +7,26 @@
         <script>
 
 $(document).ready(function() {
-            document.getElementById("test").style.visibility ="hidden";
+            document.getElementById("test").style.visibility="hidden";
             $(".toggle-button").click(function() {
 $(this).parent().find("input").slideToggle(function() {
     document.getElementById("myInput").style.visibility ="visible";
+    
+$(this).parent().find("button").slideToggle(function() {
+    document.getElementById("submit").style.visibility ="visible";
+    
+$(this).parent().find("ul").slideToggle(function() {
+    document.getElementById("myUL").style.visibility ="hidden";
+});
   
     
-      
-$(this).parent().find("a").slideToggle(function() {
-    document.getElementById("submit").style.visibility ="visible";
-});  
-});  
-$(".toggle-enter").click(function(){
-      $(this).parent().find("ul").slideToggle(function(){
-          document.getElementById("myUL").style.visibility ="visible";
-      });
-  });
+});
+});
+});
+$(".toggle-enter").click(function() {
+$(this).parent().find("ul").slideToggle(function() {
+    document.getElementById("myUL").style.visibility ="visible";
+});
 });
         })
         </script>
@@ -211,26 +215,36 @@ $(".toggle-enter").click(function(){
                 color: white;
             }
             .box{
+                box-sizing:border-box;
+                -moz-box-sizing:border-box;
+                -webkit-box-sizing:border-box;
+                border:thick solid rgb(200, 200, 200);
                 border-radius: 10px;
                 background-color: rgb(242, 120, 141);
                 width: 30%;
                 padding: 15px;
-                box-shadow: -10px 10px 0 0 black;
+                box-shadow: -10px 10px 0 0 #000;
                 font-size: 20px;
                 text-decoration: none;
                 color: inherit;
                 margin-left: 20px;
                 margin-top: 28px;
+                
             }
             .list2{
-                background-color: rgb(252, 130, 151);
+                background-color: rgb(255, 255, 255);
                 padding: 5px;
+                border:2px solid #000;
+                color:#000;
                 box-shadow: -3px 3px 0 0 black;
+                transition:0.4s ease-in;
             }
             .list2:hover{
-                background-color: rgb(rgb(262, 150, 161));
-                box-shadow: -1px 1px 0 0 black;
+                border:2px solid #fff;
+                color:#fff;
                 cursor: pointer;
+                transition-duration:0.6s;
+                background-color:#000;
             }
             .william{
                 background-image: url('wd_cat2.png');
@@ -316,8 +330,9 @@ $(".toggle-enter").click(function(){
                 color: white;
             }
             .h{
-                border: 1px solid black;
+                border: thin solid black;
                 border-radius: 100px;
+                background-color:black;
             }
             footer{
                 font-size: 20px;
@@ -480,19 +495,24 @@ $(".toggle-enter").click(function(){
     </nav>
 </div>
 </div>
+        <br><br><br>
+        <p id="ramflyers"></p><br><br><br>
+        <p class="sz">Ramflyers</p><hr style="border-color:white; width:98%;">
+        <p class="g">Ramflyers adalah nama tim yang kami bentuk melalui nama buatan yaitu Ramfly Ramsend. Ramflyers sendiri sebenarnya terdiri dari 6 orang, yang mana terdapat murid dari kelas lain dan sekolah lain. Namun kami hanya berempat disini karena projek website kami ini terdiri dari kelas kami saja, XI RPL 1. Anggota Ramflyers pada XI RPL 1 hanya berempat dan jadi hanya ada kami saja. Kami juga mempunyai sosial media untuk tim ini, Instagram : @ramflyers.gaming, YouTube : Ramflyers.</p>
         <br><br><br><br>
         <div class="box">
             <p align="center">Daftar Isi</p><hr class="h"><br>
-        <p><a href="#ramflyers" class="list2">> <span style="color: rgb(255, 255, 255);">Ramflyers</span></a></p>
-        <p><a href="#william" class="list2">> <span style="color: rgb(255, 255, 255);">William Tann</span></a></p>
-        <p><a href="#janssen" class="list2">> <span style="color: rgb(255, 255, 255);">Janssen Addison</span></a></p>
-        <p><a href="#richard" class="list2">> <span style="color: rgb(255, 255, 255);">Richard Lee</span></a></p>
-        <p><a href="#hendy" class="list2">> <span style="color: rgb(255, 255, 255);">Hendy Tandika</span></a></p>
+        <p><a href="#ramflyers" class="list2">> Ramflyers</a></p>
+        <p><a href="#william" class="list2">> William Tann</a></p>
+        <p><a href="#janssen" class="list2">> Janssen Addison</a></p>
+        <p><a href="#richard" class="list2">> Richard Lee</a></p>
+        <p><a href="#hendy" class="list2">> Hendy Tandika</a></p>
         </div>
-        <br><br><br>
-        <p id="ramflyers"></p><br><br><br><br><br>
-        <p class="sz">Ramflyers</p><hr>
-        <p class="g">Ramflyers adalah nama tim yang kami bentuk melalui nama buatan yaitu Ramfly Ramsend. Ramflyers sendiri sebenarnya terdiri dari 6 orang, yang mana terdapat murid dari kelas lain dan sekolah lain. Namun kami hanya berempat disini karena projek website kami ini terdiri dari kelas kami saja, XI RPL 1. Anggota Ramflyers pada XI RPL 1 hanya berempat dan jadi hanya ada kami saja. Kami juga mempunyai sosial media untuk tim ini, Instagram : @ramflyers.gaming, YouTube : Ramflyers.<br><br>Mari Kenalkan Anggotanya:</p>
+        <p>
+            <font size="400px">
+            - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        </font>
+        </p>
         <p id="william"></p><br><br>
         <div class="william">
         <br><br><br><br><br><br><br>
