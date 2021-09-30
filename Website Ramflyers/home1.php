@@ -7,9 +7,7 @@
         </title>
                 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
         <script>
-
 $(document).ready(function() {
             document.getElementById("test").style.visibility ="hidden";
             $(".toggle-button").click(function() {
@@ -50,7 +48,6 @@ $(".toggle-enter").click(function(){
                 }
               }
 }
-            
             </script>
         <style>
             .header{
@@ -89,7 +86,6 @@ $(".toggle-enter").click(function(){
                 filter:drop-shadow();
                 transition: 0.7s ease-in-out;
                 font-family:"Nunito Sans";
-                
             }
             .list:hover{
                 background-color:rgb(53, 54, 54);
@@ -183,7 +179,6 @@ $(".toggle-enter").click(function(){
                 margin-right:50px;
                 margin-left: -30px;
                 margin-top: 2px;
-                
                 height:32px;
                 list-style: none;
                 padding:25px;
@@ -267,7 +262,6 @@ $(".toggle-enter").click(function(){
                 font-family: "Nunito Sans";
             }
             #myUL a{
-
                 color: black;
             }
             .komentar{

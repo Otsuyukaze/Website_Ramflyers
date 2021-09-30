@@ -1,10 +1,154 @@
 <html>
     <head>
         <title>About Us</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+        <script>
+
+$(document).ready(function() {
+            document.getElementById("test").style.visibility ="hidden";
+            $(".toggle-button").click(function() {
+$(this).parent().find("input").slideToggle(function() {
+    document.getElementById("myInput").style.visibility ="visible";
+  
+    
+      
+$(this).parent().find("a").slideToggle(function() {
+    document.getElementById("submit").style.visibility ="visible";
+});  
+});  
+$(".toggle-enter").click(function(){
+      $(this).parent().find("ul").slideToggle(function(){
+          document.getElementById("myUL").style.visibility ="visible";
+      });
+  });
+});
+        })
+        </script>
+        <script>
+            function myFunction() {
+              // Declare variables
+              var input, filter, ul, li, a, i, txtValue;
+              input = document.getElementById('myInput');
+              filter = input.value.toUpperCase();
+              ul = document.getElementById("myUL");
+              li = ul.getElementsByTagName('li');
+            
+              // Loop through all list items, and hide those who don't match the search query
+              for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                  li[i].style.display = "";
+                } else {
+                  li[i].style.display = "none";
+                }
+              }
+}
+            
+            </script>
         <style>
+            .header{
+                z-index: 999;
+                background-color: black;
+                width:100%;
+                float:left;
+                height:100px;
+                display: flex;
+                margin-top: -14px;
+                position:fixed;
+            }
+            .img{
+                margin-left:20px;
+                margin-top:10px;
+                margin-bottom: 10px;
+                padding: 10px;
+                float:left;
+                padding:10px;
+            }
+            .forgodsake{
+                float:left;
+                background-color: rgb(0, 0, 0);
+                color:#fff;
+                padding:100px;
+                margin-right:50px;
+                margin-left: -30px;
+                margin-top: 2px;
+                height:32px;
+                list-style: none;
+                padding:25px;
+                font-size: 20spx;
+                font-family:"Nunito Sans";
+            }
+            .list{
+                float:left;
+                background-color: rgb(0, 0, 0);
+                color:#fff;
+                padding:25px;
+                height:34px;
+                list-style: none;
+                padding:25px;
+                margin-top: 0px;
+                display: flex;
+                flex-direction: column;
+                filter:drop-shadow();
+                transition: 0.7s ease-in-out;
+                font-family:"Nunito Sans";
+            }
+            .list:hover{
+                background-color:rgb(53, 54, 54);
+                padding:25px;
+            }
+            .searchbar #test li{
+                line-height: 25px;
+                list-style: none;
+            }
+            .searchbar #test{
+                position:absolute;
+                top:90px;
+                right:25px;
+                margin-top:10px;
+                padding-inline-start: 20px;
+            }
+            .searchbar{
+                max-width: 35px;
+            }
+            .searchbar input{
+                height: 30px;
+                width:180px;
+                border-style: solid;
+                border-color:orange;
+                border-width: 5px;;
+                border-radius: 10px 10px 0px 0px;
+                font-family: "Nunito Sans";
+                padding:5px;
+            }
+            .searchbar #submit{
+                background-color: white;
+                color:black;
+                border-width: 5px;
+                border-style: solid;
+                border-color:orange;
+                padding:5px;
+                border-radius: 30px;
+            }
+            #myUL{
+                background-color: yellow;
+                padding:10px;
+                border-style:solid;
+                border-color: orange;
+                border-width: 5px;
+                border-radius: 0px 10px 10px 10px;
+                font-family: "Nunito Sans";
+            }
+            #myUL a{
+                color: black;
+            }
             body{
                 background-color: chocolate;
                 color: rgb(0, 0, 0);
+                max-width: 200%;
+                margin:auto;
             }
             .box{
                 border-radius: 10px;
@@ -18,12 +162,12 @@
                 margin-left: 20px;
                 margin-top: 20px;
             }
-            .list{
+            .list2{
                 background-color: rgb(230, 84, 31);
                 padding: 5px;
                 box-shadow: -3px 3px 0 0 black;
             }
-            .list:hover{
+            .list2:hover{
                 background-color: rgb(255, 128, 82);
                 box-shadow: -1px 1px 0 0 black;
                 cursor: pointer;
@@ -116,16 +260,69 @@
         </style>
     </head>
     <body background="63d45b74bf710fdaac29c8c9c64b6fe9.jpg">
+        <div class="header">
+            <div>
+                <img class="img" src="logo-removebg-preview.png" width="75px" height="75px">
+            </div>
+            <div>
+            <ul>
+                <li class="forgodsake">
+                    <b>Ramflyers</b>
+                </li>
+                <div style="margin-left: 880px;">
+                <li class="list">
+                    <a href="home1.php">Home</a>
+                </li>
+                <li class="list">
+                    <a href="info1.html">Info</a>
+                </li>
+                <li class="list">
+                    <a href="home1.php">Hubungi Kami</a>
+                </li>        
+                <li class="list">
+                    <div class=searchbar>
+                    <a class="toggle-button" href="#">
+                            <img src="search_button.png" width="26" height="26">
+                        </a>
+                                <div id="test">
+                                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for tutorial">
+                              <a class="toggle-enter" id="submit" href="#">CARI</a>
+                            
+                              <ul id="myUL">
+                                  <li><a href="#">Tutorial 1</a></li>
+                                  <li><a href="#">Tutorial 2</a></li>
+                                
+                                  <li><a href="#">Tutorial 3</a></li>
+                                  <li><a href="#">Tutorial 4</a></li>
+                                
+                                  <li><a href="#">Tutorial 5</a></li>
+                                  <li><a href="#">Tutorial 6</a></li>
+                                  <li><a href="#">Tutorial 7</a></li>
+                                </ul>
+                              </div>
+                    </div>
+                        </li>
+        
+                <li class="list">
+                <a href="#">
+                  <img src="more_button.png" width="30" height="25">
+                </a>
+                </li>
+                </div>
+            </ul>
+        </div>
+        </div>
+        <br><br><br><br>
         <div class="box">
             <p align="center">Daftar Isi</p><hr class="h"><br>
-        <p><a href="#ramflyers" class="list">> <span style="color: rgb(255, 255, 255);">Ramflyers</span></a></p>
-        <p><a href="#william" class="list">> <span style="color: rgb(255, 255, 255);">William Tann</span></a></p>
-        <p><a href="#janssen" class="list">> <span style="color: rgb(255, 255, 255);">Janssen Addison</span></a></p>
-        <p><a href="#richard" class="list">> <span style="color: rgb(255, 255, 255);">Richard Lee</span></a></p>
-        <p><a href="#hendy" class="list">> <span style="color: rgb(255, 255, 255);">Hendy Tandika</span></a></p>
+        <p><a href="#ramflyers" class="list2">> <span style="color: rgb(255, 255, 255);">Ramflyers</span></a></p>
+        <p><a href="#william" class="list2">> <span style="color: rgb(255, 255, 255);">William Tann</span></a></p>
+        <p><a href="#janssen" class="list2">> <span style="color: rgb(255, 255, 255);">Janssen Addison</span></a></p>
+        <p><a href="#richard" class="list2">> <span style="color: rgb(255, 255, 255);">Richard Lee</span></a></p>
+        <p><a href="#hendy" class="list2">> <span style="color: rgb(255, 255, 255);">Hendy Tandika</span></a></p>
         </div>
         <br><br><br>
-        <p id="ramflyers"></p><br><br>
+        <p id="ramflyers"></p><br><br><br><br><br><br>
         <p class="sz">Ramflyers</p><hr>
         <p class="g">Ramflyers adalah nama tim yang kami bentuk melalui nama buatan yaitu Ramfly Ramsend. Ramflyers sendiri sebenarnya terdiri dari 6 orang, yang mana terdapat murid dari kelas lain dan sekolah lain. Namun kami hanya berempat disini karena projek website kami ini terdiri dari kelas kami saja, XI RPL 1. Anggota Ramflyers pada XI RPL 1 hanya berempat dan jadi hanya ada kami saja. Kami juga mempunyai sosial media untuk tim ini, Instagram : @ramflyers.gaming, YouTube : Ramflyers.<br><br>Mari Kenalkan Anggotanya:</p>
         <p id="william"></p><br><br>
