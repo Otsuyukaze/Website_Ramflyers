@@ -2,29 +2,36 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>
             Home | Ramflyers
         </title>
                 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
         <script>
+
 $(document).ready(function() {
-            document.getElementById("test").style.visibility ="hidden";
+            document.getElementById("test").style.visibility="hidden";
             $(".toggle-button").click(function() {
 $(this).parent().find("input").slideToggle(function() {
     document.getElementById("myInput").style.visibility ="visible";
+    
+$(this).parent().find("button").slideToggle(function() {
+    document.getElementById("submit").style.visibility ="visible";
+    
+$(this).parent().find("ul").slideToggle(function() {
+    document.getElementById("myUL").style.visibility ="hidden";
+});
   
     
-      
-$(this).parent().find("a").slideToggle(function() {
-    document.getElementById("submit").style.visibility ="visible";
-});  
-});  
-$(".toggle-enter").click(function(){
-      $(this).parent().find("ul").slideToggle(function(){
-          document.getElementById("myUL").style.visibility ="visible";
-      });
-  });
+});
+});
+});
+$(".toggle-enter").click(function() {
+$(this).parent().find("ul").slideToggle(function() {
+    document.getElementById("myUL").style.visibility ="visible";
+});
 });
         })
         </script>
@@ -48,6 +55,7 @@ $(".toggle-enter").click(function(){
                 }
               }
 }
+            
             </script>
         <style>
             .header{
@@ -59,6 +67,9 @@ $(".toggle-enter").click(function(){
                 display: flex;
                 margin-top: -18px;
                 position:fixed;
+                border-color:white;
+                border-style:none none solid none;
+                border-width:thick;
             }
             .img{
                 margin-left:20px;
@@ -88,6 +99,7 @@ $(".toggle-enter").click(function(){
                 filter:drop-shadow();
                 transition: 0.7s ease-in-out;
                 font-family:"Nunito Sans";
+                
             }
             .list:hover{
                 background-color:rgb(53, 54, 54);
@@ -187,11 +199,16 @@ $(".toggle-enter").click(function(){
                 margin-right:50px;
                 margin-left: -30px;
                 margin-top: 2px;
+                
                 height:32px;
                 list-style: none;
                 padding:25px;
                 font-size: 20spx;
                 font-family:"Nunito Sans";
+            }
+            .forgodsake:hover{
+                background-color: rgb(0, 0, 0);
+                cursor:default;
             }
             .kotakbawah{
                 border-radius: 5px;
@@ -247,7 +264,7 @@ $(".toggle-enter").click(function(){
                 border-style: solid;
                 border-color:pink;
                 border-width: 5px;;
-                border-radius: 10px 10px 0px 0px;
+                border-radius: 10px 0 0 0;
                 font-family: "Nunito Sans";
                 padding:5px;
             }
@@ -258,7 +275,7 @@ $(".toggle-enter").click(function(){
                 border-style: solid;
                 border-color:pink;
                 padding:5px;
-                border-radius: 30px;
+                border-radius: 0 10px 0 0;
             }
             #myUL{
                 background-color: black;
@@ -266,11 +283,57 @@ $(".toggle-enter").click(function(){
                 border-style:solid;
                 border-color: pink;
                 border-width: 5px;
-                border-radius: 0px 10px 10px 10px;
+                border-radius: 0 0 10px 10px;
                 font-family: "Nunito Sans";
+                position:absolute;
+                left:7.4%;
+                top:100%;
+                width:80.5%;
+                max-height:300px;
+                overflow-y:auto;
+
             }
             #myUL a{
-                color: black;
+                color: white;
+                line-height:10px;
+                padding:10px;
+                margin:0;
+            }
+            #myUL ul{
+
+            }
+            #myUL li{
+                background-color:black;
+                margin:0;
+                border-style:none none solid none;
+                border-width:thin;
+                border-color:pink;
+                width:74%;
+            }
+            #myUL li:hover{
+                background-color:rgb(53, 54, 54);
+            }
+            #test{
+                float:left;
+                position:absolute;
+                left:78%;
+            }
+            #test ul{
+                float:none;
+            }
+            #submit{
+                float:left;
+                height:50px;
+                line-height:30px;
+                width:20%;
+                font-family:"Nunito Sans";
+                text-align:center;
+            }
+            #submit:hover{
+                cursor:pointer;
+            }
+            #myInput{
+                float:left;
             }
             .komentar{
                 color: black;
@@ -322,6 +385,93 @@ $(".toggle-enter").click(function(){
                 border-style:solid;
                 border-color:black;
             }
+            nav{
+                margin:16px 0;
+                background-color:#ffffff;
+            }
+            nav ul{
+                padding:0 ;
+                margin:0 ;
+                list-style:none;
+                position:relative;
+            }
+            nav ul li{
+               
+                float:left;
+                background-color: rgb(0, 0, 0);
+                color:#fff;
+                padding:25px;
+                height:34px;
+                list-style: none;
+                padding:25px;
+                margin-top: 0px;
+                display: flex;
+                flex-direction: column;
+                filter:drop-shadow();
+                transition: 0.7s ease-in-out;
+                font-family:"Nunito Sans";
+                
+            }
+            nav ul li:hover{                
+                background-color:rgb(53, 54, 54);
+            }
+            nav a{
+                display:block;
+                padding: 0;
+                color:#ffffff;
+                font-size:20px;
+                line-height:40px;
+                text-decoration:none;
+            }
+            nav ul ul{
+                display:none;
+                position:absolute;
+                top:84px;
+                right:-380px;
+                width:500px;
+            }
+            nav ul li:hover > ul{
+                display:inherit;
+            }
+            nav ul ul li{
+                
+                float:left;
+                background-color: rgb(0, 0, 0);
+                color:#fff;
+                padding:25px;
+                height:34px;
+                list-style: none;
+                padding:25px;
+                margin-top: 0px;
+                display: flex;
+                flex-direction: column;
+                filter:drop-shadow();
+                transition: 0.7s ease-in-out;
+                font-family:"Nunito Sans";
+                
+            }
+            li > a:only-child:after{
+                content: "";
+            }
+            .ramflytomenu{
+                margin:0 0 0 40px;
+            }
+            .home{
+                background-color:darkgrey;
+            }
+            ::-webkit-scrollbar {
+                width: 10px;
+             }
+             ::-webkit-scrollbar-track {
+                background: #f1f1f1; 
+            }
+            ::-webkit-scrollbar-thumb {
+                background: #888; 
+            }
+            ::-webkit-scrollbar-thumb:hover {
+                background: #555; 
+            }
+
         </style>
     </head>
     <body>
@@ -329,29 +479,31 @@ $(".toggle-enter").click(function(){
     <div>
         <img class="img" src="logo-removebg-preview.png" width="75px" height="75px">
     </div>
-    <div>
+    <div class="ramflytomenu">
+        
+    <nav>
     <ul>
         <li class="forgodsake">
             <b>Ramflyers</b>
         </li>
-        <div style="margin-left: 880px;">
-        <li class="list">
+        <div style="margin-left: 835px;">
+        <li class="home">
             <a href="home1.php">Home</a>
         </li>
-        <li class="list">
+        <li>
             <a href="info1.php">Info</a>
         </li>
-        <li class="list">
+        <li>
             <a href="hub1.html">Hubungi Kami</a>
         </li>        
-        <li class="list">
+        <li>
             <div class=searchbar>
             <a class="toggle-button" href="#">
                     <img src="search_button.png" width="26" height="26">
                 </a>
                         <div id="test">
                         <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for tutorial">
-                      <a class="toggle-enter" id="submit" href="#">CARI</a>
+                      <button type="button" onclick="document.getElementById('myUL').style.visibility ='visible';" class="toggle-enter" id="submit">CARI</button>
                     
                       <ul id="myUL">
                           <li><a href="#">Tutorial 1</a></li>
@@ -369,12 +521,20 @@ $(".toggle-enter").click(function(){
                 </li>
 
         <li class="list">
+            
         <a href="#">
           <img src="more_button.png" width="30" height="25">
         </a>
+        <ul>
+            <li class="list">
+        <a href="index.html">Log Out</a>
         </li>
-        </div>
+        </ul>
+        </li> 
+    </div>
     </ul>
+    
+    </nav>
 </div>
 </div>
 <div>
