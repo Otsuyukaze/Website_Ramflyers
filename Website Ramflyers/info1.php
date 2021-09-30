@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>About Us</title>
+        <title>About Us | Ramflyers</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
         <script>
@@ -223,7 +223,7 @@ $(this).parent().find("ul").slideToggle(function() {
                 background-color: rgb(242, 120, 141);
                 width: 30%;
                 padding: 15px;
-                box-shadow: -10px 10px 0 0 #000;
+                box-shadow: 0 0 1.2em 0 #ffffff;
                 font-size: 20px;
                 text-decoration: none;
                 color: inherit;
