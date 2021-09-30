@@ -447,7 +447,7 @@ $(this).parent().find("ul").slideToggle(function() {
             <a href="info1.php">Info</a>
         </li>
         <li>
-            <a href="hub1.html">Hubungi Kami</a>
+            <a href="hub1.php">Hubungi Kami</a>
         </li>        
         <li>
             <div class=searchbar>

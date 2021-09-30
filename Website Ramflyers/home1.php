@@ -494,7 +494,7 @@ $(this).parent().find("ul").slideToggle(function() {
             <a href="info1.php">Info</a>
         </li>
         <li>
-            <a href="hub1.html">Hubungi Kami</a>
+            <a href="hub1.php">Hubungi Kami</a>
         </li>        
         <li>
             <div class=searchbar>
@@ -557,7 +557,7 @@ $(this).parent().find("ul").slideToggle(function() {
     <a href="info1.php">
         <img src="info.png" width="32%" height="50%" class="tutul">
     </a>
-    <a href="hub1.html">
+    <a href="hub1.php">
         <img src="hubungi.png" width="32%" height="50%" class="tutul">
     </a>
     </div>

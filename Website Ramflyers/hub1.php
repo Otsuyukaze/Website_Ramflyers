@@ -382,7 +382,7 @@ $(this).parent().find("ul").slideToggle(function() {
                     <a href="info1.php">Info</a>
                 </li>
                 <li class="info">
-                    <a href="hub1.html">Hubungi Kami</a>
+                    <a href="hub1.php">Hubungi Kami</a>
                 </li>        
                 <li>
                     <div class=searchbar>
@@ -430,6 +430,7 @@ $(this).parent().find("ul").slideToggle(function() {
             <span class="f">Contact Us</span><br>
             <span class="f2">Want To Ask Something?</span>
             <br><br><br>
+            <form method="POST" action="simpan1.php">
             <div class="box">
                 <p class="f3">Fill Here</p>
                 <br><br>
@@ -441,11 +442,12 @@ $(this).parent().find("ul").slideToggle(function() {
                 <br><br>
                 <input type="text" name="message" placeholder="Message" autocomplete="off" size="50" class="i"><hr class="h">
                 <br><br>
-                <input type="submit" name="submit" value="Send My Message" class="s"><br><br>
+                <input type="submit" name="sendmymessage" value="Send My Message" class="s"><br><br>
             </div>
             <br><br><br>
         </center>
         <div class="ukuran">
+            </form>
             <center>
                 <br>
                 &copy;2021 Ramfly Ramsend Incorporation. Ramflyers and the Ramflyers Logo are among our registered and unregistered trademarks in Southeast Asia and other countries.
