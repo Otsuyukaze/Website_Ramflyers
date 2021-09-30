@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>About Us</title>
@@ -48,6 +49,9 @@ $(".toggle-enter").click(function(){
             
             </script>
         <style>
+            html{
+                scroll-behavior: smooth;
+            }
             .header{
                 z-index: 999;
                 background-color: black;
@@ -160,7 +164,7 @@ $(".toggle-enter").click(function(){
                 text-decoration: none;
                 color: inherit;
                 margin-left: 20px;
-                margin-top: 20px;
+                margin-top: 28px;
             }
             .list2{
                 background-color: rgb(230, 84, 31);
@@ -257,6 +261,10 @@ $(".toggle-enter").click(function(){
                 border: 1px solid black;
                 border-radius: 100px;
             }
+            footer{
+                font-size: 20px;
+                font-family: "Nunito Sans";
+            }
         </style>
     </head>
     <body background="63d45b74bf710fdaac29c8c9c64b6fe9.jpg">
@@ -322,7 +330,7 @@ $(".toggle-enter").click(function(){
         <p><a href="#hendy" class="list2">> <span style="color: rgb(255, 255, 255);">Hendy Tandika</span></a></p>
         </div>
         <br><br><br>
-        <p id="ramflyers"></p><br><br><br><br><br><br>
+        <p id="ramflyers"></p><br><br><br><br><br>
         <p class="sz">Ramflyers</p><hr>
         <p class="g">Ramflyers adalah nama tim yang kami bentuk melalui nama buatan yaitu Ramfly Ramsend. Ramflyers sendiri sebenarnya terdiri dari 6 orang, yang mana terdapat murid dari kelas lain dan sekolah lain. Namun kami hanya berempat disini karena projek website kami ini terdiri dari kelas kami saja, XI RPL 1. Anggota Ramflyers pada XI RPL 1 hanya berempat dan jadi hanya ada kami saja. Kami juga mempunyai sosial media untuk tim ini, Instagram : @ramflyers.gaming, YouTube : Ramflyers.<br><br>Mari Kenalkan Anggotanya:</p>
         <p id="william"></p><br><br>
@@ -330,28 +338,28 @@ $(".toggle-enter").click(function(){
         <br><br><br><br><br><br><br><br><br><br>
         <p class="sz">William Tann</p>
         <p class="f">William adalah murid SMK Cinta Kasih Tzu Chi sejak masih Sekolah Dasar. Hingga sekarang William sudah bersekolah di Tzu Chi selama 11 tahun. William sekarang adalah kelas XI RPL 1, ia memilih jurusan RPL karena menyukai hal-hal seputar teknologi.</p>
-        <br>
-        <p id="janssen"></p><br><br>
+        <br><br><br><br><br>
+        <p id="janssen"></p>
         </div>
         <div class="janssen">
         <br><br><br><br><br><br><br><br><br><br>
         <p class="sz">Janssen Addison</p>
         <p class="f">Janssen adalah murid SMK Cinta Kasih Tzu Chi sejak masih Sekolah Dasar, sama seperti William, Janssen sudah bersekolah di Tzu Chi selama 11 tahun. Janssen juga kelas XI RPL 1 sekelas dengan William, ia memilih jurusan RPL karena menyukai koding.</p>
-        <br>
-        <p id="richard"></p><br><br>
+        <br><br><br><br><br><br><br>
+        <p id="richard"></p>
         </div>
         <div class="richard">
         <br><br><br><br><br><br><br><br><br><br><br>
         <p class="sz">Richard Lee</p>
         <p class="f">Richard adalah murid SMK Cinta Kasih Tzu Chi sejak Sekolah Menengah Kejurusan, Richard bersekolah di Tzu Chi selama 1,5 tahun. Richard juga kelas XI RPL 1 sekelas dengan William dan Janssen, ia memilih jurusan RPL karena menyukai desain. </p>
-        <br>
-        <p id="hendy"></p><br><br>
+        <br><br><br><br><br><br>
+        <p id="hendy"></p>
         </div>
         <div class="hendy">
         <br><br><br><br><br><br><br>
         <p class="sz">Hendy Tandika</p>
-        <p class="f">Hendy adalah murid SMK Cinta Kasih Tzu Chi sejak Sekolah Menengah Kejurusan, Hendy bersekolah di Tzu Chi selama 1,5 tahun, sama seperti Richard, Hendy dan Richard sudah sekolah bersama dari playgroup hingga sekolah dasar. Hendy juga kelas XI RPL 1 sekelas dengan William, Janssen, dan Richard. Ia memilih jurusan RPL karena menyukai teknologi juga sama seperti William.</p>
-        <br>
+        <p class="f">Hendy adalah murid SMK Cinta Kasih Tzu Chi sejak Sekolah Menengah Kejurusan, Hendy bersekolah di Tzu Chi selama 1,5 tahun, sama seperti Richard, Hendy dan Richard sudah sekolah bersama dari playgroup hingga sekolah dasar. Hendy juga kelas XI RPL 1 sekelas dengan William, Janssen, dan Richard. Ia memilih jurusan RPL karena menurutnya kode itu keren.</p>
         </div>
+        <footer align="center">2021 Ramfly Ramsend Incorporation. Ramflyers and the Ramflyers Logo are among our registered and unregistered trademarks in Southeast Asia and other countries.</footer><br><br><br>
     </body>
 </html>

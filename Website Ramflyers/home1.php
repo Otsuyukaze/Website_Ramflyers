@@ -339,10 +339,10 @@ $(".toggle-enter").click(function(){
             <a href="home1.php">Home</a>
         </li>
         <li class="list">
-            <a href="info1.html">Info</a>
+            <a href="info1.php">Info</a>
         </li>
         <li class="list">
-            <a href="home1.php">Hubungi Kami</a>
+            <a href="hub1.html">Hubungi Kami</a>
         </li>        
         <li class="list">
             <div class=searchbar>
@@ -394,10 +394,10 @@ $(".toggle-enter").click(function(){
     <a href="community.html">
         <img src="tutorial.png" width="32%" height="50%" class="tutul">
     </a>
-    <a href="info1.html">
+    <a href="info1.php">
         <img src="info.png" width="32%" height="50%" class="tutul">
     </a>
-    <a href="memes.html">
+    <a href="hub1.html">
         <img src="hubungi.png" width="32%" height="50%" class="tutul">
     </a>
     </div>
