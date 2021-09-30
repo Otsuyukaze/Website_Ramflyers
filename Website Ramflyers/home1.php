@@ -71,6 +71,8 @@ $(".toggle-enter").click(function(){
             body{
                 max-width: 200%;
                 margin:auto;
+                background-image: url('sakura2.png');
+                background-size: 1520px 540px;
             }
             .list{
                 float:left;
@@ -127,14 +129,20 @@ $(".toggle-enter").click(function(){
             .tutul{
                 box-shadow: 0 0 .25em rgba(0, 0, 0, 0.9);
                 box-sizing:border-box;
+                -webkit-filter: brightness(100%);
             }
             .tutul:hover{
-                box-shadow: 0 0 .25em rgba(0, 0, 0, 0.9);
                 box-sizing:border-box;
-                opacity: 70%;
+                -webkit-filter: brightness(70%);
+                -webkit-transition: all 1s ease;
+                -moz-transition: all 1s ease;
+                -o-transition: all 1s ease;
+                -ms-transition: all 1s ease;
+                transition: all 1s ease;
             }
             .tampilan{
-                background-color: chocolate;
+                background-image: url('sakura.png');
+                background-size: 1515px 540px;
                 font-family: "Nunito Sans";
                 font-size: 40px;
                 padding:50px;
@@ -187,7 +195,7 @@ $(".toggle-enter").click(function(){
             }
             .kotakbawah{
                 border-radius: 5px;
-                background-color: coral;  
+                background-color: rgb(252, 130, 151);  
                 padding:30px;
                 margin-bottom:30px;
                 font-size:30px;
@@ -204,7 +212,7 @@ $(".toggle-enter").click(function(){
             }
             .kotakbawah{
                 border-radius: 5px;
-                background-color: coral;  
+                background-color: rgb(252, 130, 151);  
                 padding:30px;
                 margin-bottom:30px;
                 font-size:30px;
@@ -237,7 +245,7 @@ $(".toggle-enter").click(function(){
                 height: 30px;
                 width:180px;
                 border-style: solid;
-                border-color:orange;
+                border-color:pink;
                 border-width: 5px;;
                 border-radius: 10px 10px 0px 0px;
                 font-family: "Nunito Sans";
@@ -248,15 +256,15 @@ $(".toggle-enter").click(function(){
                 color:black;
                 border-width: 5px;
                 border-style: solid;
-                border-color:orange;
+                border-color:pink;
                 padding:5px;
                 border-radius: 30px;
             }
             #myUL{
-                background-color: yellow;
+                background-color: black;
                 padding:10px;
                 border-style:solid;
-                border-color: orange;
+                border-color: pink;
                 border-width: 5px;
                 border-radius: 0px 10px 10px 10px;
                 font-family: "Nunito Sans";
@@ -269,7 +277,7 @@ $(".toggle-enter").click(function(){
             }
             .kolomkomentar{
                 border-radius:5px;
-                background-color:coral;
+                background-color: rgb(252, 130, 151);
                 padding:10px;
                 font-size:16px;
                 margin:30px;
@@ -316,7 +324,7 @@ $(".toggle-enter").click(function(){
             }
         </style>
     </head>
-    <body bgcolor="chocolate">
+    <body>
 <div class="header">
     <div>
         <img class="img" src="logo-removebg-preview.png" width="75px" height="75px">
