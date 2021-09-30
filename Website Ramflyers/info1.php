@@ -229,7 +229,6 @@ $(this).parent().find("ul").slideToggle(function() {
                 color: inherit;
                 margin-left: 20px;
                 margin-top: 28px;
-                
             }
             .list2{
                 background-color: rgb(255, 255, 255);
@@ -320,10 +319,6 @@ $(this).parent().find("ul").slideToggle(function() {
                 font-size: 25px;
                 margin-left: 15px;
                 line-height: 60px;
-            }
-            hr{
-                border: 4px solid black;
-                border-radius: 100px;
             }
             a{
                 text-decoration: none;

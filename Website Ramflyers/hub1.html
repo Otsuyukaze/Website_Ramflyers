@@ -18,12 +18,84 @@
                 background: #555; 
             }
             body{
-                background-color: black;
-                color: pink;
+                background-image: url('tetrisblack.jpg');
+            }
+            .f{
+                font-size: 72px;
+                color: rgb(242, 120, 141);
+            }
+            .f2{
+                font-size: 20px;
+                color: white
+            }
+            .f3{
+                font-size: 30px;
+                color: black;
+            }
+            .box{
+                box-sizing:border-box;
+                -moz-box-sizing:border-box;
+                -webkit-box-sizing:border-box;
+                border:thick solid whitesmoke;
+                border-radius: 10px;
+                background-color: rgb(242, 120, 141);
+                width: 31%;
+                padding: 15px;
+                text-decoration: none;
+                box-shadow: 0 0 1.7em 0 #ffffff;
+            }
+            .h{
+                border: thin solid black;
+                border-radius: 999px;
+                background-color: white;
+            }
+            input{
+                border-radius: 4px;
+                outline: none;
+                border: none;
+            }
+            .i{
+                background-color: rgb(242, 120, 141);;
+                color: black;
+                margin-left: -2px;
+            }
+            ::placeholder{
+                color: rgb(78, 78, 78);
+            }
+            .s{
+                border: 2px solid black;
+                background-color: rgb(255, 96, 123);
+                box-shadow: 0 0 0.5em 0 black;
+                width: 150px;
+                height: 50px;
+            }
+            .s:hover{
+                cursor: pointer;
+                background-color: rgb(235, 90, 114);
+                border: 1px solid black;
+                box-shadow: 0 0 0.2em 0 black;
             }
         </style>
     </head>
     <body>
-        <center>Contact Us</center>
+        <center>
+            <br>
+            <span class="f">Contact Us</span><br>
+            <span class="f2">Want To Ask Something?</span>
+            <br><br><br>
+            <div class="box">
+                <p class="f3">Fill Here</p>
+                <br><br>
+                <input type="text" name="nama" placeholder="Your Name" autocomplete="off" size="50" class="i"><hr class="h">
+                <br><br>
+                <input type="text" name="email" placeholder="Your Email" autocomplete="off" size="50" class="i"><hr class="h">
+                <br><br>
+                <input type="text" name="subject" placeholder="Subject" autocomplete="off" size="50" class="i"><hr class="h">
+                <br><br>
+                <input type="text" name="message" placeholder="Message" autocomplete="off" size="50" class="i"><hr class="h">
+                <br><br>
+                <input type="submit" name="submit" value="Send My Message" class="s"><br><br>
+            </div>
+        </center>
     </body>
 </html>
