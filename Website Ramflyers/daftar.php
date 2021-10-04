@@ -1,7 +1,13 @@
 <html>
     <head>
-        <title>Form Login Admin</title>
+    <meta charset="UTF-8" />  
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+        <title>Form Register</title>
+
         <style>
+            @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');*{
+                box-sizing:border-box;
+            }
             @keyframes move_wave {
     0% {
         transform: translateX(0) translateZ(0) scaleY(1)
@@ -13,12 +19,15 @@
         transform: translateX(-50%) translateZ(0) scaleY(1)
     }
 }
+body{
+    overflow:none;
+}
 .floatAboveEverything {
     z-index: 16;
 	position: absolute;
     text-align: center;
     color: black;
-    padding: 0px;
+    padding: 30px;
     background-color: rgb(255, 255, 255);
     box-shadow:0 0 .25em rgba(0,0,0,.9);
     box-sizing:border-box;
@@ -28,6 +37,76 @@
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
+}
+.container{
+    background-color:rgb(0,0,0);
+    padding:20px 40px;
+    border-radius:5px;
+}
+.container h1{
+    text-align: center;
+    margin bottom:30px;
+}
+.container a{
+    text-decoration:none;
+    color:grey;
+}
+.btn{
+    cursor:pointer;
+    display:inline-block;
+    width:100%;
+    background:lightgrey;
+    padding:15px;
+    font-family:inherit;
+    font-size:16px;
+    border: 0;
+    border-radius:5px;
+}
+.btn:focus{
+    outline:0;
+}
+.btn:active{
+    transform: scale(0.98);
+}
+.text{
+    margin-top:30px;
+}
+.form-control{
+    position:relative;
+    margin:20px 0 40px;
+    width:300px;
+}
+.form-control input{
+    background-color:transparent;
+    border:0;
+    border-bottom:2px black solid;
+    display:block;
+    width:140%;
+    padding:15px 0;
+    font-size:18px;
+    color:black;
+}
+.form-control input:focus,
+.form-control input:valid{
+    outline:0;
+    border-bottom-color:grey;
+}
+.form-control label{
+    position: absolute;
+    top:15px;
+    left:0;
+    pointer-events:none;
+}
+.form-control label span{
+    display:inline-block;
+    font-size:18px;
+    min-width:5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+   color:grey;
+   transform: translateY(-30px);
 }
 input:hover[type=submit]{
       cursor: pointer;
@@ -102,26 +181,19 @@ input:hover[type=submit]{
         <audio autoplay loop class="music">
             <source src="9convert.com - C418   Sweden  Minecraft Volume Alpha.mp3" type="audio/mp3">
         </audio>
+        <div class="container">
         <form action="prosesdaftar.php" method="post" class="floatAboveEverything"><br>
-
-            <table align="center">
-                <tr>
-                    <td align="center" colspan="3"><h3>Daftar</h3></td>
-                </tr>
-                <tr>
-                    <td><br>Username</td>
-                    <td style="width: 5px;"><br>:</td>
-                    <td><br><input type="text" name="username" size="20"></td>
-                </tr>
-                <tr>
-                    <td>Password<br></td>
-                    <td style="width: 5px;">:</td>
-                    <td><input type="password" name="password" size="20"></td>
-                </tr>
-                <tr>
-                    <td colspan="3" align="center"><br><input type="submit" name="logins" value="Masuk" style="background-color: rgb(160, 160, 160); color: white; border-style: solid; border-radius: 6px; border-color: rgb(0, 0, 0);"></td>
-                </tr>
-            </table><br>
+            <h1>Form Register</h1>
+            <div class="form-control">
+                <input type="text" name="username" autocomplete="off" required>
+                <label>Username</label>
+</div>
+<div class="form-control">
+    <input type="password" name="password" required>
+    <label>Password</label>
+</div>
+<button class="btn" name="logins">Create New Account</button>
+<p class="text">Already Have an Account?<a href="login.php">Log In</a>
         </form>
         <div class="waveWrapper waveAnimation">
             <div class="waveWrapperInner bgTop">
@@ -134,6 +206,17 @@ input:hover[type=submit]{
               <div class="wave waveBottom" style="background-image: url('wave-bot.png')"></div>
             </div>
           </div>
+          <script>
+            
+            const labels = document.querySelectorAll('.form-control label')
+            labels.forEach(label => {
+                label.innerHTML = label.innerText.split('').map((letter, idx) => `<span style="transition-delay:${idx * 50}ms">${letter}</span>`)
+                .join('')
+            }
+            )
+            
+                
+            </script>
     </body>
     </font>
 </html>

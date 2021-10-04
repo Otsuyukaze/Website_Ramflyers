@@ -471,6 +471,9 @@ $(this).parent().find("ul").slideToggle(function() {
             ::-webkit-scrollbar-thumb:hover {
                 background: #555; 
             }
+            .headerspacing{
+                margin-left:843px;
+            }
 
         </style>
     </head>
@@ -486,7 +489,7 @@ $(this).parent().find("ul").slideToggle(function() {
         <li class="forgodsake">
             <b>Ramflyers</b>
         </li>
-        <div style="margin-left: 835px;">
+        <div class="headerspacing">
         <li class="home">
             <a href="home1.php">Home</a>
         </li>
@@ -598,7 +601,7 @@ $(this).parent().find("ul").slideToggle(function() {
                         </td>
                     </label>
                     <td>
-                        <input type="text" name="nama" placeholder="Nama Lengkap" style="text-align:left;">
+                        <input type="text" name="nama" placeholder="Nama Lengkap" style="text-align:left;" autocomplete="off">
                     </td>
                     
                 </tr>
@@ -612,7 +615,7 @@ $(this).parent().find("ul").slideToggle(function() {
                         </td>
                     </label>
                     <td>
-                        <input type="text" name="subject" placeholder="Judul Pesan">
+                        <input type="text" name="subject" placeholder="Judul Pesan" autocomplete="off">
                     </td>
                 </tr>
                 <tr>

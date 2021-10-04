@@ -213,6 +213,7 @@ $(this).parent().find("ul").slideToggle(function() {
                 background-image: url('background-1939128.jpg');
                 background-size: 1590px 1300px;
                 color: white;
+                scroll-behavior:smooth;
             }
             .box{
                 box-sizing:border-box;

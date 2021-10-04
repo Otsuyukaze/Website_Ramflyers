@@ -71,6 +71,7 @@ $(this).parent().find("ul").slideToggle(function() {
                 max-width: 200%;
                 margin:auto;
                 background-image: url('tetrisblack.jpg');
+                font-family:"Nunito Sans";
             }
             html{
                 scroll-behavior: smooth;
@@ -320,21 +321,7 @@ $(this).parent().find("ul").slideToggle(function() {
                 text-decoration: none;
                 box-shadow: 0 0 1.7em 0 #ffffff;
             }
-            .h{
-                border: thin solid black;
-                border-radius: 999px;
-                background-color: white;
-            }
-            input{
-                border-radius: 4px;
-                outline: none;
-                border: none;
-            }
-            .i{
-                background-color: rgb(242, 120, 141);;
-                color: black;
-                margin-left: -2px;
-            }
+
             .info{
                 background-color:darkgrey;
             }
@@ -360,6 +347,76 @@ $(this).parent().find("ul").slideToggle(function() {
                 background-color: black;
                 color: white;
             }
+            .container{
+    background-color:transparent;
+    padding:20px 40px;
+    border-radius:5px;
+}
+.container h1{
+    text-align: center;
+    margin bottom:30px;
+}
+.container a{
+    text-decoration:none;
+    color:grey;
+}
+.btn{
+    cursor:pointer;
+    display:inline-block;
+    width:80%;
+    background:lightgrey;
+    padding:15px;
+    font-family:inherit;
+    font-size:16px;
+    border: 0;
+    border-radius:5px;
+}
+.btn:focus{
+    outline:0;
+}
+.btn:active{
+    transform: scale(0.98);
+}
+.text{
+    margin-top:30px;
+}
+.form-control{
+    position:relative;
+    margin:20px 0 40px;
+    width:300px;
+}
+.form-control input{
+    background-color:transparent;
+    border:0;
+    border-bottom:2px black solid;
+    display:block;
+    width:100%;
+    padding:15px 0;
+    font-size:18px;
+    color:black;
+}
+.form-control input:focus,
+.form-control input:valid{
+    outline:0;
+    border-bottom-color:grey;
+}
+.form-control label{
+    position: absolute;
+    top:15px;
+    left:0;
+    pointer-events:none;
+}
+.form-control label span{
+    display:inline-block;
+    font-size:18px;
+    min-width:5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+   color:grey;
+   transform: translateY(-30px);
+}
         </style>
     </head>
     <body>
@@ -430,29 +487,45 @@ $(this).parent().find("ul").slideToggle(function() {
             <span class="f">Contact Us</span><br>
             <span class="f2">Want To Ask Something?</span>
             <br><br><br>
+            <div class="container">
             <form method="POST" action="simpan1.php">
             <div class="box">
-                <p class="f3">Fill Here</p>
-                <br><br>
-                <input type="text" name="nama" placeholder="Your Name" autocomplete="off" size="50" class="i"><hr class="h">
-                <br><br>
-                <input type="text" name="email" placeholder="Your Email" autocomplete="off" size="50" class="i"><hr class="h">
-                <br><br>
-                <input type="text" name="subject" placeholder="Subject" autocomplete="off" size="50" class="i"><hr class="h">
-                <br><br>
-                <input type="text" name="message" placeholder="Message" autocomplete="off" size="50" class="i"><hr class="h">
-                <br><br>
-                <input type="submit" name="sendmymessage" value="Send My Message" class="s"><br><br>
+                <h1>Fill Here</h1>
+                <div class="form-control">
+                <input type="text" name="nama" autocomplete="off" required><label>Your Name</label>
+                </div><div class="form-control">
+                <input type="text" name="email" autocomplete="off" required><label>Your Email</label>
+                </div><div class="form-control">
+                <input type="text" name="subject" autocomplete="off" required><label>Subject</label>
+                </div><div class="form-control">
+                <input type="text" name="message" autocomplete="off" required><label>Message</label>
+                </div><div class="form-control">
+                <button class="btn" name="sendmymessage">Send My Message</button>
+</div>
+
+            </div>
             </div>
             <br><br><br>
         </center>
         <div class="ukuran">
             </form>
+</div>
             <center>
                 <br>
                 &copy;2021 Ramfly Ramsend Incorporation. Ramflyers and the Ramflyers Logo are among our registered and unregistered trademarks in Southeast Asia and other countries.
                 <br><br>
             </center>
         </div>
+        <script>
+            
+            const labels = document.querySelectorAll('.form-control label')
+            labels.forEach(label => {
+                label.innerHTML = label.innerText.split('').map((letter, idx) => `<span style="transition-delay:${idx * 50}ms">${letter}</span>`)
+                .join('')
+            }
+            )
+            
+                
+            </script>
     </body>
 </html>
