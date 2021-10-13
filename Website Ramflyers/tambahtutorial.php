@@ -1,5 +1,6 @@
 <html>
     <head>
+        <title>Tambah Tutorial | Ramflyers</title>
         <style>
             html{
                 overflow: hidden;
@@ -106,6 +107,11 @@
 <a href="tambahtutorial.php">
 <li class=header>
     Tambahkan Tutorial
+</li> 
+</a>
+<a href="pesanmasuk.php">
+<li class=header>
+    Pesan Masuk
 </li> 
 </a>
    <a href="loginadmin.php">

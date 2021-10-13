@@ -1,6 +1,9 @@
+<?php
+include("koneksi.php");
+?>
 <html>
     <head>
-        <title>List Tutorial | Ramflyers</title>
+        <title>Pesan Masuk | Ramflyers</title>
         <style>
             html{
                 overflow: hidden;
@@ -69,6 +72,7 @@
                 margin:20px;
                 padding:10px;
                 text-align:center;
+                
             }
             .tampilan{
                 background-color:grey;
@@ -76,37 +80,15 @@
                 height: 100%;
                 display:flex;
             }
-            a.biru{
-                text-decoration:none;
-                color: blue;
+            .kosong{
+                text-align: left;
             }
-            .button{
-                width:25px;
-                height:25px;
+            .ga{
+                color: red;
             }
-            td{
-                padding:10px;
-            }
-            table{
-                margin:20px;
-            }
-            .table{
-                border-color:grey;
-                border-style:solid;
-                padding:10px;
-                margin:10px;
-                text-align:left;
-                height:80%;
-                overflow-y:scroll;
-            }
-            .table td{
-                border-style:none none solid none;
-                border-color:grey;
-                border-width:2px;
-            }
-            </style>
-</head>
-<body>
+        </style>
+    </head>
+    <body>
     <div class=top>
         <ul>
         <a href="tampilanadmin.php">
@@ -142,54 +124,50 @@ Log Out
     How To Use:
     <ul>
         <li>
-            List Tutorial hanya digunakan untuk melihat, mengedit, dan mendelete tutorial yang sudah di input
+            Kalian bisa melihat pesan dari user disini
+        </li>
+        <li>
+            Pesan dari user tidak dapat di edit oleh admin, sehingga benar-benar murni dari user tanpa diubah sedikitpun.
+        </li>
+        <li>
+            Tekan delete untuk menghapus pesan
         </li>
         </ul>
         </div>
         </div>
 
         <div class=kanan>
-        <div class=table>
-        <table>
-            <tr>
-                <td>
-            Judul
-        </td>
-        <td>
-            Topik
-        </td>
-        <td>
-            Kategori
-        </td>
-        <td>
-            Hapus
-        </td>
-        <td>
-            Edit List
-        </td>
-        <td>
-            Edit Page
-        </td>
-    </tr>
+            <table border="2">
+            <tr align="center">
+            <th>No</th>
+            <th>Nama Pengirim</th>
+            <th>Email Pengirim</th>
+            <th>Subjek</th>
+            <th>Isi Pesan</th>
+            <th>Hapus Pesan</th>
+        </tr>
             <?php
-        include("koneksi.php");
-        $query=mysqli_query($db,'SELECT * FROM tutorial');
-        while($dataadmin=mysqli_fetch_array($query))
-        {
-            $judul = $dataadmin['judul'];
-            $topik= $dataadmin['topik'];
-            $kategori = $dataadmin['kategori'];
+        $no=1;
+        $sql = "SELECT * FROM hubungi";
+        $query = mysqli_query($db, $sql);
 
-            echo '<tr><td class="under">'.$judul.'</td><td class="under">' .$topik.'</td><td class="under">'.$kategori.'</td>';
-            echo '<td class="under"><a class=komentar title="Hapus Tutorial" href="hapustutorial.php?id=' .$dataadmin['id'].'"><center><img class="button" src="delete_button_black.png"></center></a></td><td class="under"><a class=komentar href="edittutorial.php?id='.$dataadmin['id'].'"><center><img class="button" src="edit_button_black.png"></center></a></td><td><a href="pageeditor.php">Edit Page</a></td></div>';
+        while($hubungi = mysqli_fetch_array($query)){
+            echo "<tr align='center'>";
+
+            echo "<td>".$no++.".</td>";
+            echo "<td>".$hubungi['nama']."</td>";
+            echo "<td>".$hubungi['email']."</td>";
+            echo "<td>".$hubungi['subject']."</td>";
+            echo "<td>".$hubungi['message']."</td>";
+
+            echo "<td><a href='hapus1.php?id=".$hubungi['id']."'><span class='ga'>Delete</span></a></td>";
+
+            echo "</tr>";
         }
         ?>
         </table>
-        </div>
-        <div class=textbawah>
-            <a>Mau Buat Lebih banyak? Tekan </a><a href="tambahtutorial.php" class="biru"> disini </a><a>untuk menambahkannya!</a>
-    </div>
+        <p class="kosong"> Total Pesan : <?php echo mysqli_num_rows($query) ?> Pesan</p>
         </div>
         </div>
-</body>
+    </body>
 </html>

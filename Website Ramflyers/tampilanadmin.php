@@ -1,5 +1,6 @@
 <html>
     <head>
+        <title>Admin | Ramflyers</title>
         <style>
             html{
                 overflow: hidden;
@@ -96,6 +97,11 @@
     Tambahkan Tutorial
 </li> 
 </a>
+<a href="pesanmasuk.php">
+<li class=header>
+    Pesan Masuk
+</li> 
+</a>
    <a href="loginadmin.php">
 <li class=header>
 Log Out
@@ -109,9 +115,10 @@ Log Out
     How To Use:
     <ul>
         <li>
-            Di atas ada 3 opsi, yaitu:<br>
+            Di atas ada 4 opsi, yaitu:<br>
             "List Tutorial"<br>
             "Tambahkan Tutorial"<br>
+            "Pesan Masuk"<br>
             "Log Out"<br>
         </li>
         <li>
@@ -121,6 +128,10 @@ Log Out
         <li>
             Tambahkan Tutorial:<br>
             Untuk Menambahkan List yang ada di List Tutorial<br>
+        </li>
+        <li>
+            Pesan Masuk:<br>
+            Untuk melihat pesan user yang mengisi "Hubungi Kami" pada website utama<br>
         </li>
         <li>
             Log Out:<br>
@@ -144,7 +155,7 @@ Log Out
             <br>
             
             Selamat Datang di Tampilan Admin<br>
-            Silahkan Memilih Salah Satu Dari 3 Opsi Diatas
+            Silahkan Memilih Salah Satu Dari 4 Opsi Diatas
         </div>
         </div>
 </body>
