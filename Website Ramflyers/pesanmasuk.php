@@ -71,8 +71,9 @@ include("koneksi.php");
                 float:left;
                 margin:20px;
                 padding:10px;
-                text-align:center;
-                
+                text-align:left;
+                line-height:20px;
+                overflow-y:scroll;
             }
             .tampilan{
                 background-color:grey;
@@ -85,6 +86,19 @@ include("koneksi.php");
             }
             .ga{
                 color: red;
+                border:thin solid black;
+                background-color:rgb(240, 240, 240);
+                border-radius:5px;
+                padding:5px;
+            }
+            .ga:hover{
+                cursor:pointer;
+            }
+            .kolompesan{
+                border:3px solid black;
+                border-radius:5px;
+                padding:10px;
+                height:auto;
             }
         </style>
     </head>
@@ -137,7 +151,7 @@ Log Out
         </div>
 
         <div class=kanan>
-            <table border="2">
+            <!-- <table border="2">
             <tr align="center">
             <th>No</th>
             <th>Nama Pengirim</th>
@@ -145,27 +159,23 @@ Log Out
             <th>Subjek</th>
             <th>Isi Pesan</th>
             <th>Hapus Pesan</th>
-        </tr>
+        </tr> -->
             <?php
         $no=1;
         $sql = "SELECT * FROM hubungi";
         $query = mysqli_query($db, $sql);
 
         while($hubungi = mysqli_fetch_array($query)){
-            echo "<tr align='center'>";
+            echo "<div class='kolompesan'>";
+            echo "<p>Nama Pengirim: ".$hubungi['nama']. "</p>";
+            echo "<p>Email Pengirim: ".$hubungi['email']."</p>";
+            echo "<p>Subject: ".$hubungi['subject']."</p>";
+            echo "<p>Pesan: <br>".$hubungi['message']."</p>";
+            echo "<a href='hapus1.php?id=".$hubungi['id']."'><span class='ga'>Delete</span></a></div><br>";
 
-            echo "<td>".$no++.".</td>";
-            echo "<td>".$hubungi['nama']."</td>";
-            echo "<td>".$hubungi['email']."</td>";
-            echo "<td>".$hubungi['subject']."</td>";
-            echo "<td>".$hubungi['message']."</td>";
-
-            echo "<td><a href='hapus1.php?id=".$hubungi['id']."'><span class='ga'>Delete</span></a></td>";
-
-            echo "</tr>";
         }
         ?>
-        </table>
+        <!-- </table> -->
         <p class="kosong"> Total Pesan : <?php echo mysqli_num_rows($query) ?> Pesan</p>
         </div>
         </div>
