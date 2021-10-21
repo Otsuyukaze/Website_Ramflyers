@@ -186,16 +186,15 @@
                 var noo = 1;
                 function add(){
             var new_chq_no = parseInt($('#total_chq').val())+1;
-            // var number = parseInt($('#total_chq').val());
-            var new_input= "<div id='new_"+new_chq_no+"'><input placeholder='Title' name='title"+no+"'><br><textarea placeholder='Masukkan Text di kolom ini' name='text"+no+"'></textarea><br></div>";
+            var new_input= "<div id='new_"+new_chq_no+"'><input type ='text' placeholder='Title' name='title'><br><textarea placeholder='Masukkan Text di kolom ini' name='text'></textarea><br></div>";
             $('#new_chq').append(new_input);
-            $('#total_chq').val(new_chq_no)
+            $('#total_chq').val(new_chq_no);
             }  
             function media(){
             var new_chq_no = parseInt($('#total_chq').val())+1;
             var new_input= "<div id='new_"+new_chq_no+"'><input type='file' accept='image/*' name='image"+noo+"' id='file' onchange='loadFile(event)' style='display:none;'><label for='file' style='cursor:pointer;'>Upload Image Here</label><br><img id='output'></div>";
             $('#new_chq').append(new_input);
-            $('#total_chq').val(new_chq_no)
+            $('#total_chq').val(new_chq_no);
             }  
                 
           function remove(){
@@ -230,13 +229,13 @@
         </div>
                 </div>
 <div class="sidebar">
-  <button onclick="add()">
+  <button type="button" onclick="add()">
         <img src="add_button.png" width=40px height=40px>
                 </button>
-  <button onclick="media()">
+  <button type="button" onclick="media()">
         <img src="media_button.png" width=40px height=40px> 
                 </button>
-  <button onclick="remove()">
+  <button type="button" onclick="remove()">
         <img src="delete_button_black2.png" width=40px height=40px> 
                 </button>
 </div>
@@ -244,12 +243,32 @@
     <center>
     <?php
         include("koneksi.php");
-        $query=mysqli_query($db,'SELECT * FROM tutorial');
+                if( !isset($_GET['id']) ){
+         echo '<script> alert("Maaf ada kesalahan dalam data")window.location.href="list.php"';
+        }
+        $id = $_GET['id'];
+        $query=mysqli_query($db,"SELECT * FROM tutorial WHERE id=$id");
         while($dataadmin=mysqli_fetch_array($query))
         {
             $judul = $dataadmin['judul'];
             $topik= $dataadmin['topik'];
             $kategori = $dataadmin['kategori'];
+        // include("koneksi.php");
+        // if( !isset($_GET['id']) ){
+        //     header('Location: list.php');
+        // }
+        // $id = $_GET['id'];
+        // $sql = "SELECT * FROM tutorial WHERE id=$id";
+        // $query = mysqli_query($db, $sql);
+        // $dataadmin = mysqli_fetch_assoc($query);
+        // if( mysqli_num_rows($query) < 1 ){
+        //     die("data tidak ditemukan...");
+        // }        
+        // if($dataadmin)
+        // {
+        //     $judul = $dataadmin['judul'];
+        //     $topik= $dataadmin['topik'];
+        //     $kategori = $dataadmin['kategori'];
 ?>
 <h1>
 <?= $dataadmin['judul']; ?>
