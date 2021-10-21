@@ -17,14 +17,18 @@
 
 $(document).ready(function() {
             document.getElementById("test").style.visibility="hidden";
+            document.getElementById("searchbar").style.animation="none";
+            $(".blink").click(function(){
+            document.getElementById("searchbar").style.animation="blink 3s ease-in-out";
+            });
             $(".toggle-button").click(function() {
-$(this).parent().find("input").slideToggle(function() {
-    document.getElementById("myInput").style.visibility ="visible";
+$("input").parent().find("input").slideToggle(function() {
+    document.getElementById("").style.visibility ="visible";
     
-$(this).parent().find("button").slideToggle(function() {
+$("input").parent().find("button").slideToggle(function() {
     document.getElementById("submit").style.visibility ="visible";
     
-$(this).parent().find("ul").slideToggle(function() {
+$("ul").parent().find("ul").slideToggle(function() {
     document.getElementById("myUL").style.visibility ="hidden";
 });
   
@@ -58,7 +62,7 @@ $(this).parent().find("ul").slideToggle(function() {
                   li[i].style.display = "none";
                 }
               }
-}
+            }
             
             </script>
         <style>
@@ -471,6 +475,11 @@ $(this).parent().find("ul").slideToggle(function() {
                 left:80%;
                 list-style:lower-alpha;
             }
+            @keyframes blink{
+                0% {opacity:0%;}
+                50% {opacity:100%;}
+                100% {opacity:0%;}
+            }
         </style>
     </head>
     <body>
@@ -496,9 +505,9 @@ $(this).parent().find("ul").slideToggle(function() {
             <a href="hub1.php">Hubungi Kami</a>
         </li>        
         <li>
-            <div class=searchbar>
+            <div class=searchbar id="searchbar">
             <a class="toggle-button" href="#">
-                    <img src="search_button.png" width="26" height="26">
+                    <img src="search_button.png" width="26" height="26" >
                 </a>
                         <div id="test">
                         <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for tutorial">
@@ -552,7 +561,7 @@ $(this).parent().find("ul").slideToggle(function() {
 <br>
 <div class="tampilan">
     <hr>
-    <a href="community.html">
+    <a href="#" class="blink">
         <img src="tutorial.png" width="32%" height="50%" class="tutul">
     </a>
     <a href="info1.php">
