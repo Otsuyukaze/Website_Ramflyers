@@ -184,6 +184,7 @@ $(this).parent().find("ul").slideToggle(function() {
                 font-size: 20px;
                 background-color: black;
                 color: white;
+                text-align:center;
             }
             hr{
                 height: 2px;
@@ -644,11 +645,9 @@ $(this).parent().find("ul").slideToggle(function() {
     </div>
 </div>
 <div class="ukuran">
-    <center>
         <br>
         ©2021 Ramfly Ramsend Incorporation. Ramflyers and the Ramflyers Logo are among our registered and unregistered trademarks in Southeast Asia and other countries.
         <br><br>
-    </center>
 </div>
     </body>
     </html>

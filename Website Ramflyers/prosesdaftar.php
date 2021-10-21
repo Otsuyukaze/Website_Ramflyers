@@ -30,7 +30,7 @@ if (count($errors) == 0) {
   	header('location: login.php?daftar berhasil');
   }
   else
-  echo '<div class="color"><center><font size="36px">Username Sudah digunakan, coba untuk mengganti username anda</font></center><br><br><br><br><br><a href="daftar.php" class="bg">Klik Lagi Untuk Daftar Kembali</a></div>';
+  echo '<div class="color"><font size="36px">Username Sudah digunakan, coba untuk mengganti username anda</font><br><br><br><br><br><a href="daftar.php" class="bg">Klik Lagi Untuk Daftar Kembali</a></div>';
   echo mysqli_error($db);
 }
 ?>
@@ -60,6 +60,7 @@ if (count($errors) == 0) {
                 margin-right: 270px;
                 position: absolute;
                 margin-top:10%;
+                text-align:center;
 
             }
 

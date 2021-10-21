@@ -18,7 +18,7 @@ if($check){
     }
     else{
         ?>
-        <br><br><br><br><br><br><br><br><br><br><br><br><center><div class="color"><font size="36px">Username atau Password Salah</font><br><br><br><br><br><a href="loginadmin.php" class="bg">Klik Lagi Untuk Login Kembali</a></div></center>
+        <br><br><br><br><br><br><br><br><br><br><br><br><div class="color"><font size="36px">Username atau Password Salah</font><br><br><br><br><br><a href="loginadmin.php" class="bg">Klik Lagi Untuk Login Kembali</a></div>
         <?php
         echo mysqli_error($db);
     }
@@ -34,6 +34,7 @@ if($check){
                 margin-right: 270px;
                 border-color:grey;
                 border-style:solid;
+                text-align:center;
             }
         </style>
         </head>

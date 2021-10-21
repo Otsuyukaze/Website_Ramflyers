@@ -349,6 +349,11 @@ $(this).parent().find("ul").slideToggle(function() {
     background-color:transparent;
     padding:20px 40px;
     border-radius:5px;
+    position:absolute;
+    left:32%;
+    top:50%;
+    width:100%;
+    height:100%;
 }
 .container h1{
     text-align: center;
@@ -368,6 +373,7 @@ $(this).parent().find("ul").slideToggle(function() {
     font-size:16px;
     border: 0;
     border-radius:5px;
+    margin-left:13%;
 }
 .btn:focus{
     outline:0;
@@ -380,7 +386,7 @@ $(this).parent().find("ul").slideToggle(function() {
 }
 .form-control{
     position:relative;
-    margin:20px 0 40px;
+    margin:20px 0 40px 40px;
     width:300px;
 }
 .form-control input{
@@ -480,7 +486,7 @@ $(this).parent().find("ul").slideToggle(function() {
             </nav>
         </div>
         </div>
-        <center>
+        <div style="text-align:center;">
             <br><br><br><br><br>
             <span class="f">Contact Us</span><br>
             <span class="f2">Want To Ask Something?</span>
@@ -504,16 +510,14 @@ $(this).parent().find("ul").slideToggle(function() {
             </div>
             </div>
             <br><br><br>
-        </center>
         <div class="ukuran">
             </form>
 </div>
-            <center>
                 <br>
                 &copy;2021 Ramfly Ramsend Incorporation. Ramflyers and the Ramflyers Logo are among our registered and unregistered trademarks in Southeast Asia and other countries.
                 <br><br>
-            </center>
         </div>
+</div>
         <script>
             
             const labels = document.querySelectorAll('.form-control label')

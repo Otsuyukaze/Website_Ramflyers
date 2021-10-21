@@ -18,7 +18,7 @@ if($check){
     }
     else{
         ?>
-        <br><br><br><br><br><br><br><br><br><br><br><br><div class="color"><center><font size="36px">Username atau Password Salah</font></center><br><br><br><br><br><a href="index.html" class="bg">Klik Untuk Ke Halaman Utama</a><a href="login.php" class="bg">Klik Untuk Login Kembali</a></div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><div class="color"><font size="36px">Username atau Password Salah</font></center><br><br><br><br><br><a href="index.html" class="bg">Klik Untuk Ke Halaman Utama</a><a href="login.php" class="bg">Klik Untuk Login Kembali</a></div>
         <?php
         echo mysqli_error($db);
     }
@@ -48,6 +48,7 @@ if($check){
                 font-family: "Berlin Sans FB";
                 margin-left: 270px;
                 margin-right: 270px;
+                text-align:center;
             }
 
             body {

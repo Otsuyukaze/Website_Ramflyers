@@ -101,6 +101,12 @@ if( mysqli_num_rows($query) < 1 ){
                 width:150%;
                 padding:5px;
             }
+            
+            table{
+                position:absolute;
+                left:53%;
+                top:50%;
+            }
             </style>
 </head>
 <body>
@@ -145,7 +151,6 @@ Log Out
 
         <div class=kanan>
             <br>
-            <center>
             <form action="prosesedittutorial.php" method="POST">
             <input type="hidden" name="id" value="<?php echo $dataadmin['id']?>">
                     <br>
@@ -206,12 +211,11 @@ Log Out
                 </tr>
                 <tr>
                     <td>
-                    <input type="submit" value="Add" name="add" style="background-color: rgb(60, 184, 201); color: white; border-style: solid; border-radius: 6px; border-color: rgb(0, 0, 0);">
+                    <input type="submit" value="Ubah" name="add" style="background-color: rgb(60, 184, 201); color: white; border-style: solid; border-radius: 6px; border-color: rgb(0, 0, 0);">
                     </td>
                 </table>
                 <br>
                 </form>
-        </center>
         </div>
         </div>
 </body>

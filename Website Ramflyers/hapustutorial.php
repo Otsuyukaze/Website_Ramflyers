@@ -11,7 +11,7 @@ if(isset($_GET['id'])){
     if( $query ){
         header('Location: list.php');
     } else {
-        echo "<body bgcolor=cyan><center><br><br><br><br><br><br><br><br><br><br><br><br><br><br>";
+        echo "<body style='background-color:cyan;text-align:center;'><br><br><br><br><br><br><br><br><br><br><br><br><br><br>";
         echo '<div style="width:35%;padding:30px;background-color:white;"><a href="list.php?">Balik lagi</a><br>';
         die("Komentar Gagal dihapus ;-;</div>");
 

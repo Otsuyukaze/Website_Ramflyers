@@ -339,6 +339,7 @@ $(this).parent().find("ul").slideToggle(function() {
                 font-size: 20px;
                 background-color: black;
                 color: white;
+                text-align:center;
             }
             nav{
                 margin:16px 0;
@@ -537,11 +538,9 @@ $(this).parent().find("ul").slideToggle(function() {
         <p class="f">Hendy adalah murid SMK Cinta Kasih Tzu Chi sejak Sekolah Menengah Kejurusan, Hendy bersekolah di Tzu Chi selama 1,5 tahun, sama seperti Richard, Hendy dan Richard sudah sekolah bersama dari playgroup hingga sekolah dasar. Hendy juga kelas XI RPL 1 sekelas dengan William, Janssen, dan Richard. Ia memilih jurusan RPL karena menurutnya kode itu keren.</p>
         </div>
         <div class="ukuran">
-    <center>
         <br>
         ©2021 Ramfly Ramsend Incorporation. Ramflyers and the Ramflyers Logo are among our registered and unregistered trademarks in Southeast Asia and other countries.
         <br><br>
-    </center>
 </div>
     </body>
 </html>

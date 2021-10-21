@@ -32,9 +32,7 @@ if( mysqli_num_rows($query) < 1 ){
 <body bgcolor=coral>           
     <form action="prosesedit.php" method="POST">
         <fieldset>
-            <center>
-            <h1>Edit Komentar</h1>
-</center>
+            <h1 style="text-align:center;">Edit Komentar</h1>
         <table>
  
  

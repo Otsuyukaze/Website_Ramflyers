@@ -89,6 +89,11 @@
                 width:150%;
                 padding:5px;
             }
+            table{
+                position:absolute;
+                left:53%;
+                top:50%;
+            }
             </style>
 </head>
 <body>
@@ -138,7 +143,6 @@ Log Out
 
         <div class=kanan>
             <br>
-            <center>
             <form action="simpantutorial.php" method="POST">
                     <br>
                     <br>
