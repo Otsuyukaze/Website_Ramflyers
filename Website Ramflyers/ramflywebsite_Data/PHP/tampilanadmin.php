@@ -120,7 +120,7 @@
 Log Out
         </li>
     </a>
-    <a href="Hmm\index.html">
+    <a href="..\[Redacted]\index.html">
 <li class=sus>
             ???
         </li>

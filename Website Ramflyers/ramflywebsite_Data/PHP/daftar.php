@@ -182,7 +182,7 @@ input:hover[type=submit]{
     <font face="Arial">
     <body><br><br><br><br><br><br><br><br><br><br><br><br>
         <audio autoplay loop class="music">
-            <source src="9convert.com - C418   Sweden  Minecraft Volume Alpha.mp3" type="audio/mp3">
+            <source src="../ramflywebsite_Data/Assets/Audio/9convert.com - C418   Sweden  Minecraft Volume Alpha.mp3" type="audio/mp3">
         </audio>
         <div class="container">
         <form action="prosesdaftar.php" method="post" class="floatAboveEverything"><br>
@@ -200,13 +200,13 @@ input:hover[type=submit]{
         </form>
         <div class="waveWrapper waveAnimation">
             <div class="waveWrapperInner bgTop">
-              <div class="wave waveTop" style="background-image: url('wave-top.png')"></div>
+              <div class="wave waveTop" style="background-image: url('../Assets/Image/Animated/wave-top.png')"></div>
             </div>
             <div class="waveWrapperInner bgMiddle">
-              <div class="wave waveMiddle" style="background-image: url('wave-mid.png')"></div>
+              <div class="wave waveMiddle" style="background-image: url('../Assets/Image/Animated/wave-mid.png')"></div>
             </div>
             <div class="waveWrapperInner bgBottom">
-              <div class="wave waveBottom" style="background-image: url('wave-bot.png')"></div>
+              <div class="wave waveBottom" style="background-image: url('../Assets/Image/Animated/wave-bot.png')"></div>
             </div>
           </div>
           <script>

@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>About Us | Ramflyers</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            Home | Ramflyers
+        </title>
+                
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
         <script>
@@ -56,9 +61,6 @@ $(this).parent().find("ul").slideToggle(function() {
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
 </style>
         <style>
-            html{
-                scroll-behavior: smooth;
-            }
             .header{
                 z-index: 999;
                 background-color: black;
@@ -80,6 +82,116 @@ $(this).parent().find("ul").slideToggle(function() {
                 float:left;
                 padding:10px;
             }
+            body{
+                max-width: 200%;
+                margin:auto;
+                background-image: url('sakura2.png');
+                background-size: 1520px 540px;
+                font-family: 'Nunito Sans', sans-serif;
+            }
+            .list{
+                float:left;
+                background-color: rgb(0, 0, 0);
+                color:#fff;
+                padding:25px;
+                height:34px;
+                list-style: none;
+                padding:25px;
+                margin-top: 0px;
+                display: flex;
+                flex-direction: column;
+                filter:drop-shadow();
+                transition: 0.7s ease-in-out;
+                
+            }
+            .list:hover{
+                background-color:rgb(53, 54, 54);
+                padding:25px;
+            }
+            a{
+                text-decoration:none;
+                color:white;
+            }
+            .bruh{
+                float:left;
+                background-color: rgb(0, 0, 0);
+                color:#fff;
+                padding:25px;
+                margin:-15px;
+                height:48px;
+                list-style: none;
+                padding:25px;
+                font-size: 20px;
+                vertical-align: middle;
+            }
+            .bruh:hover{
+                cursor:default;
+            }
+            .chinese{
+                width:100%;
+                height:610px;    
+            }
+            .selamat{
+                color: white;
+                font-size: 50px;
+                text-align: center;
+                position:absolute;
+                top: 50%; 
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .tutul{
+                box-shadow: 0 0 .25em rgba(0, 0, 0, 0.9);
+                box-sizing:border-box;
+                -webkit-filter: brightness(100%);
+            }
+            .tutul:hover{
+                box-sizing:border-box;
+                -webkit-filter: brightness(70%);
+                -webkit-transition: all 1s ease;
+                -moz-transition: all 1s ease;
+                -o-transition: all 1s ease;
+                -ms-transition: all 1s ease;
+                transition: all 1s ease;
+            }
+            .tampilan{
+                background-image: url('sakura.png');
+                background-size: 1515px 540px;
+                font-size: 40px;
+                padding:50px;
+                margin-top:-95px;
+                height: 100%;
+            }
+            .why{
+                font-size: 25px;
+            }
+            .kotak1{
+                float: left;
+                border-radius: 5px;
+                background-color: coral;
+                width:30%;
+                height:adjust;
+                padding: 10px;
+                box-shadow: -20px 20px 0 0 black;
+          
+            }
+            .sampingkotak1{
+                float: left;
+                margin-top: 50px;
+                padding-left: 100px;
+            }
+            .ukuran{
+                font-size: 20px;
+                background-color: black;
+                color: white;
+                text-align:center;
+            }
+            hr{
+                height: 2px;
+                background-color: black;
+                border-color: black;
+                border-radius: 3px;
+            }
             .forgodsake{
                 float:left;
                 background-color: rgb(0, 0, 0);
@@ -99,24 +211,39 @@ $(this).parent().find("ul").slideToggle(function() {
                 background-color: rgb(0, 0, 0);
                 cursor:default;
             }
-            .list{
-                float:left;
-                background-color: rgb(0, 0, 0);
-                color:#fff;
-                padding:25px;
-                height:34px;
-                list-style: none;
-                padding:25px;
-                margin-top: 0px;
-                display: flex;
-                flex-direction: column;
-                filter:drop-shadow();
-                transition: 0.7s ease-in-out;
-                font-family:"Nunito Sans"; 
+            .kotakbawah{
+                border-radius: 5px;
+                background-color: rgb(252, 130, 151);  
+                padding:30px;
+                margin-bottom:30px;
+                font-size:30px;
+                box-shadow:0 0 10px 0px;
             }
-            .list:hover{
+            .loginbawah{
+                border-radius: 5px;
+                background-color:black;
+                width:500px;
+                transition: 0.7s ease-in-out;
+            }
+            .loginbawah:hover{
                 background-color:rgb(53, 54, 54);
-                padding:25px;
+            }
+            .kotakbawah{
+                border-radius: 5px;
+                background-color: rgb(252, 130, 151);  
+                padding:30px;
+                margin-bottom:30px;
+                font-size:30px;
+                box-shadow:0 0 10px 0px;
+            }
+            .loginbawah{
+                border-radius: 5px;
+                background-color:black;
+                width:500px;
+                transition: 0.7s ease-in-out;
+            }
+            .loginbawah:hover{
+                background-color:rgb(53, 54, 54);
             }
             .searchbar #test li{
                 line-height: 25px;
@@ -207,139 +334,55 @@ $(this).parent().find("ul").slideToggle(function() {
             #myInput{
                 float:left;
             }
-            body{
-                color: rgb(0, 0, 0);
-                max-width: 200%;
-                margin:auto;
-                background-image: url('background-1939128.jpg');
-                background-size: 1590px 1300px;
-                color: white;
-                scroll-behavior:smooth;
-                font-family: 'Nunito Sans', sans-serif;
-            }
-            .box{
-                box-sizing:border-box;
-                -moz-box-sizing:border-box;
-                -webkit-box-sizing:border-box;
-                border:thick solid rgb(200, 200, 200);
-                border-radius: 10px;
-                background-color: rgb(242, 120, 141);
-                width: 30%;
-                padding: 15px;
-                box-shadow: 0 0 1.2em 0 #ffffff;
-                font-size: 20px;
-                text-decoration: none;
-                color: inherit;
-                margin-left: 20px;
-                margin-top: 28px;
-            }
-            .list2{
-                background-color: rgb(255, 255, 255);
-                padding: 5px;
-                border:2px solid #000;
-                color:#000;
-                box-shadow: -3px 3px 0 0 black;
-                transition:0.4s ease-in;
-            }
-            .list2:hover{
-                border:2px solid #fff;
-                color:#fff;
-                cursor: pointer;
-                transition-duration:0.6s;
-                background-color:#000;
-            }
-            .william{
-                background-image: url('wd_cat2.png');
-                background-size:1590px 1117px;
-                width:99.45%;
-                height:100%;
-                background-repeat: no-repeat;
-                background-position: center;
-                border-style: solid;
-                border-width: 4px;
-                border-color: black;
-                border-radius: 10px;
-                padding-right: -10px;
-                margin-bottom: 50px;
+            .komentar{
                 color: black;
             }
-            .janssen{
-                background-image: url('ching_chong.png');
-                background-size:1590px 1017px;
-                width:99.45%;
-                height:100%;
-                background-repeat: no-repeat;
-                background-position: center;
-                border-style: solid;
-                border-width: 4px;
-                border-color: black;
-                border-radius: 10px;
-                padding-right: -10px;
-                margin-bottom: 50px;
-                color: black;
+            .kolomkomentar{
+                border-radius:5px;
+                background-color: rgb(252, 130, 151);
+                padding:10px;
+                font-size:16px;
+                margin:30px;
+                box-shadow:0 0 10px 0;
+                
             }
-            .richard{
-                background-image: url('Screenshot_2021-09-28-18-08-08-87_41be58ba4732ca6a1097a3b2524cd3ac.jpg');
-                background-size:1590px 990px;
-                width:99.45%;
-                height:100%;
-                background-repeat: no-repeat;
-                background-position: center;
-                border-style: solid;
-                border-width: 4px;
-                border-color: black;
-                border-radius: 10px;
-                padding-right: -10px;
-                margin-bottom: 50px;
-                color: rgb(255, 255, 255);
+            input{
+                outline:none;
+                border-style:none none solid none;
+                border-width:2px;
+                border-color:black;
+                padding:5px;
+                width:320px;
             }
-            .hendy{
-                background-image: url('hendy_cat.png');
-                background-size:1590px 1090px;
-                width:99.45%;
-                height:100%;
-                background-repeat: no-repeat;
-                background-position: center;
-                border-style: solid;
-                border-width: 4px;
-                border-color: black;
-                border-radius: 10px;
-                padding-right: -10px;
-                margin-bottom: 50px;
-                color: rgb(255, 255, 255);
+            textarea{
+                border-width:2px;
+                padding:5px;
+                border-color:black;
+                border-style:none none solid none;
+                outline:none;
             }
-            .sz{
-                font-size: 40px;
-                margin-left: 15px;
+            input[type=submit]{
+                border-radius:3px;
+                outline:none;
+                border-width:0px;
+                padding:5px;
+                width:auto;
             }
-            .f{
-                font-size: 25px;
-                margin-left: 15px;
-                width: 50%;
-                line-height: 60px;
+            input[type=submit]:hover{
+                cursor:pointer;
             }
-            .g{
-                font-size: 25px;
-                margin-left: 15px;
-                line-height: 60px;
+            .overflow{
+                overflow-y:scroll;
+                height:500px;
+                border-radius:5px;
             }
-            a{
-                text-decoration: none;
-                color: white;
-            }
-            .h{
-                border: thin solid black;
-                border-radius: 100px;
-                background-color:black;
-            }
-            footer{
-                font-size: 20px;
-            }
-            .ukuran{
-                font-size: 20px;
-                background-color: black;
-                color: white;
-                text-align:center;
+            .space{
+                margin:10px;
+                background-color:white;
+                padding:10px;
+                border-radius:10px;
+                border-style:solid;
+                border-color:black;
             }
             nav{
                 margin:16px 0;
@@ -412,7 +455,7 @@ $(this).parent().find("ul").slideToggle(function() {
             .ramflytomenu{
                 margin:0 0 0 40px;
             }
-            .list1{
+            .home{
                 background-color:darkgrey;
             }
             ::-webkit-scrollbar {
@@ -427,10 +470,14 @@ $(this).parent().find("ul").slideToggle(function() {
             ::-webkit-scrollbar-thumb:hover {
                 background: #555; 
             }
+            .headerspacing{
+                margin-left:843px;
+            }
+
         </style>
     </head>
     <body>
-    <div class="header">
+<div class="header">
     <div>
         <img class="img" src="logo-removebg-preview.png" width="75px" height="75px">
     </div>
@@ -441,11 +488,11 @@ $(this).parent().find("ul").slideToggle(function() {
         <li class="forgodsake">
             <b>Ramflyers</b>
         </li>
-        <div style="margin-left: 835px;">
-        <li>
+        <div class="headerspacing">
+        <li class="home">
             <a href="home1.php">Home</a>
         </li>
-        <li class="list1">
+        <li>
             <a href="info1.php">Info</a>
         </li>
         <li>
@@ -492,55 +539,115 @@ $(this).parent().find("ul").slideToggle(function() {
     </nav>
 </div>
 </div>
-        <br><br><br>
-        <p id="ramflyers"></p><br><br><br>
-        <p class="sz">Ramflyers</p><hr style="border-color:white; width:98%;">
-        <p class="g">Ramflyers adalah nama tim yang kami bentuk melalui nama buatan yaitu Ramfly Ramsend. Ramflyers sendiri sebenarnya terdiri dari 6 orang, yang mana terdapat murid dari kelas lain dan sekolah lain. Namun kami hanya berempat disini karena projek website kami ini terdiri dari kelas kami saja, XI RPL 1. Anggota Ramflyers pada XI RPL 1 hanya berempat dan jadi hanya ada kami saja. Kami juga mempunyai sosial media untuk tim ini, Instagram : @ramflyers.gaming, YouTube : Ramflyers.</p>
-        <br><br><br><br>
-        <div class="box">
-            <p align="center">Daftar Isi</p><hr class="h"><br>
-        <p><a href="#ramflyers" class="list2">> Ramflyers</a></p>
-        <p><a href="#william" class="list2">> William Tann</a></p>
-        <p><a href="#janssen" class="list2">> Janssen Addison</a></p>
-        <p><a href="#richard" class="list2">> Richard Lee</a></p>
-        <p><a href="#hendy" class="list2">> Hendy Tandika</a></p>
+<div>
+<div class="chinese">
+    <img class="chinese" src="Wallpaper.jpg">
+</div>
+<div class="selamat">
+    Ramfly Ramsend Inc.
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="tampilan">
+    <hr>
+    <a href="community.html">
+        <img src="tutorial.png" width="32%" height="50%" class="tutul">
+    </a>
+    <a href="info1.php">
+        <img src="info.png" width="32%" height="50%" class="tutul">
+    </a>
+    <a href="hub1.php">
+        <img src="hubungi.png" width="32%" height="50%" class="tutul">
+    </a>
+    </div>
+
+    <div class=kolomkomentar>
+<b>
+            Kolom Komentar:
+</b>
+<div class="overflow">
+<div class="scroll">
+</p>
+        <?php
+        include("koneksi.php");
+        $query=mysqli_query($db,'SELECT * FROM komentar');
+        while($data=mysqli_fetch_array($query))
+        {
+            $nama = $data['nama'];
+            $subject= $data['subject'];
+            $pesan = $data['pesan'];
+            
+            echo '<div style="background-color:white;border-radius:5px;padding:10px;margin-bottom:10px;margin-right:10px;border-style:solid;border-color:black;">';
+            echo "<p>Dari <b>".$nama."</b>:<br><hr width=200px align=left>Komentar:<br><br><b> $subject </b><br><br><i>$pesan</i> <br><br/>";
+            echo "<a class=komentar title='Hapus Pesan' href='hapus.php?id=" .$data['id']."'>[Hapus Komentar]</a><br><a class=komentar href='edit.php?id=".$data['id']."'>[Edit Komentar]</a> <br/></p></div>";
+        }
+        ?>
         </div>
+        </div>
+        <div class="space">
+<table>
+            <form action="simpan.php" method="POST">
+                <tr>
+                    <td>
+                        <label for="nama">
+                            Nama
+                        </td>
+                        <td>
+                            :
+                        </td>
+                    </label>
+                    <td>
+                        <input type="text" name="nama" placeholder="Nama Lengkap" style="text-align:left;" autocomplete="off">
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>
+                        <label for="subject">
+                            Subject
+                        </td>
+                        <td>
+                            :
+                        </td>
+                    </label>
+                    <td>
+                        <input type="text" name="subject" placeholder="Judul Pesan" autocomplete="off">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pesan">
+                            Comment
+                        </td>
+                        <td>
+                            :
+                        </td>
+                    </label>
+                    <td>
+                        <textarea placeholder="Masukan Komentar Anda disini" cols=38 rows=3 name="pesan" required></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan=3>
+                    <input type="submit" value="Masukkan Komentar" name="daftar">
+                    </td>
+                </tr>
+            </form>
+        </table>
+        <br>
+        </fieldset>
         <p>
-            <font size="400px">
-            - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        </font>
-        </p>
-        <p id="william"></p><br><br>
-        <div class="william">
-        <br><br><br><br><br><br><br>
-        <p class="sz">William Tann</p>
-        <p class="f">William adalah murid SMK Cinta Kasih Tzu Chi sejak masih Sekolah Dasar. Hingga sekarang William sudah bersekolah di Tzu Chi selama 11 tahun. William sekarang adalah kelas XI RPL 1, ia memilih jurusan RPL karena menyukai hal-hal seputar teknologi.</p>
-        <br><br><br><br><br>
-        <p id="janssen"></p>
         </div>
-        <div class="janssen">
-        <br><br><br><br>
-        <p class="sz">Janssen Addison</p>
-        <p class="f">Janssen adalah murid SMK Cinta Kasih Tzu Chi sejak masih Sekolah Dasar, sama seperti William, Janssen sudah bersekolah di Tzu Chi selama 11 tahun. Janssen juga kelas XI RPL 1 sekelas dengan William, ia memilih jurusan RPL karena menyukai koding.</p>
-        <br><br><br><br><br><br><br>
-        <p id="richard"></p>
         </div>
-        <div class="richard">
-        <br><br><br><br><br>
-        <p class="sz">Richard Lee</p>
-        <p class="f">Richard adalah murid SMK Cinta Kasih Tzu Chi sejak Sekolah Menengah Kejurusan, Richard bersekolah di Tzu Chi selama 1,5 tahun. Richard juga kelas XI RPL 1 sekelas dengan William dan Janssen, ia memilih jurusan RPL karena menyukai desain. </p>
-        <br><br><br><br><br><br>
-        <p id="hendy"></p>
-        </div>
-        <div class="hendy">
-        <br><br><br><br><br>
-        <p class="sz">Hendy Tandika</p>
-        <p class="f">Hendy adalah murid SMK Cinta Kasih Tzu Chi sejak Sekolah Menengah Kejurusan, Hendy bersekolah di Tzu Chi selama 1,5 tahun, sama seperti Richard, Hendy dan Richard sudah sekolah bersama dari playgroup hingga sekolah dasar. Hendy juga kelas XI RPL 1 sekelas dengan William, Janssen, dan Richard. Ia memilih jurusan RPL karena menurutnya kode itu keren.</p>
-        </div>
-        <div class="ukuran">
+    </div>
+</div>
+<div class="ukuran">
         <br>
         ©2021 Ramfly Ramsend Incorporation. Ramflyers and the Ramflyers Logo are among our registered and unregistered trademarks in Southeast Asia and other countries.
         <br><br>
 </div>
     </body>
-</html>
+    </html>

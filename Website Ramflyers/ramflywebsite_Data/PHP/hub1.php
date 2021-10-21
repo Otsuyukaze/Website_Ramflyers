@@ -73,7 +73,7 @@ $(this).parent().find("ul").slideToggle(function() {
             body{
                 max-width: 200%;
                 margin:auto;
-                background-image: url('tetrisblack.jpg');
+                background-image: url('../Assets/Image/Backgrounds/tetrisblack.jpg');
                 font-family: 'Nunito Sans', sans-serif;
             }
             html{
@@ -426,7 +426,7 @@ $(this).parent().find("ul").slideToggle(function() {
     <body>
         <div class="header">
             <div>
-                <img class="img" src="logo-removebg-preview.png" width="75px" height="75px">
+                <img class="img" src="../Assets/Image/Buttons 2.0/logo-removebg-preview.png" width="75px" height="75px">
             </div>
             <div class="ramflytomenu">
                 
@@ -448,7 +448,7 @@ $(this).parent().find("ul").slideToggle(function() {
                 <li>
                     <div class=searchbar>
                     <a class="toggle-button" href="#">
-                            <img src="search_button.png" width="26" height="26">
+                            <img src="../Assets/Image/Buttons/search_button.png" width="26" height="26">
                         </a>
                                 <div id="test">
                                 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for tutorial">
@@ -472,7 +472,7 @@ $(this).parent().find("ul").slideToggle(function() {
                 <li class="list">
                     
                 <a href="#">
-                  <img src="more_button.png" width="30" height="25">
+                  <img src="../Assets/Image/Buttons/more_button.png" width="30" height="25">
                 </a>
                 <ul>
                     <li class="list">

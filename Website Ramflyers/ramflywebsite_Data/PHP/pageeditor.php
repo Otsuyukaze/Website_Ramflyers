@@ -233,13 +233,13 @@
                 </div>
 <div class="sidebar">
   <button type="button" onclick="add()">
-        <img src="add_button.png" width=40px height=40px>
+        <img src="../Assets/Image/Buttons/add_button.png" width=40px height=40px>
                 </button>
   <button type="button" onclick="media()">
-        <img src="media_button.png" width=40px height=40px> 
+        <img src="../Assets/Image/Buttons/media_button.png" width=40px height=40px> 
                 </button>
   <button type="button" onclick="remove()">
-        <img src="delete_button_black2.png" width=40px height=40px> 
+        <img src="../Assets/Image/Buttons/delete_button_black2.png" width=40px height=40px> 
                 </button>
 </div>
 <div class="tampilan" id="bgchange">
