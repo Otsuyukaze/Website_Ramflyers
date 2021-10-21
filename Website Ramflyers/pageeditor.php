@@ -182,16 +182,18 @@
                 }
                 $('.add').on('click',add);
                 $('.remove').on('click',remove);  
+                var no = 1;
+                var noo = 1;
                 function add(){
             var new_chq_no = parseInt($('#total_chq').val())+1;
             // var number = parseInt($('#total_chq').val());
-            var new_input= "<div id='new_"+new_chq_no+"'><input placeholder='Title'><br><textarea placeholder='Masukkan Text di kolom ini'></textarea><br></div>";
+            var new_input= "<div id='new_"+new_chq_no+"'><input placeholder='Title' name='title"+no+"'><br><textarea placeholder='Masukkan Text di kolom ini' name='text"+no+"'></textarea><br></div>";
             $('#new_chq').append(new_input);
             $('#total_chq').val(new_chq_no)
             }  
             function media(){
             var new_chq_no = parseInt($('#total_chq').val())+1;
-            var new_input= "<div id='new_"+new_chq_no+"'><input type='file' accept='image/*' name='image' id='file' onchange='loadFile(event)' style='display:none;'><label for='file' style='cursor:pointer;'>Upload Image Here</label><br><img id='output'></div>";
+            var new_input= "<div id='new_"+new_chq_no+"'><input type='file' accept='image/*' name='image"+noo+"' id='file' onchange='loadFile(event)' style='display:none;'><label for='file' style='cursor:pointer;'>Upload Image Here</label><br><img id='output'></div>";
             $('#new_chq').append(new_input);
             $('#total_chq').val(new_chq_no)
             }  

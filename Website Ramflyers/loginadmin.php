@@ -26,7 +26,7 @@
     <body>
         <form class="fm" action="prosesloginadmin.php" method="POST">
             <p><b>Username :</b> <input type="text" name="username" size="25"></p>
-            <p><b>&nbsp;Password&nbsp;:</b> <input type="text" name="password" size="25"></p><br>
+            <p><b>&nbsp;Password&nbsp;:</b> <input type="password" name="password" size="25"></p><br>
             <p><input type="submit" name="loginadmin" value="Masuk" style="background-color: grey; color: white; border-style: solid; border-color: black; width: 125px; height: 35px;"></p>
         </form>
     </body>
