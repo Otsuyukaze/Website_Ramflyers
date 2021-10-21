@@ -114,6 +114,9 @@
                 background-color:black;
                 border-radius:2px;   
             }
+            .atasjudul{
+                text-align:center;
+            }
             #new_chq{
                 padding:20px;
             }
@@ -240,7 +243,7 @@
                 </button>
 </div>
 <div class="tampilan" id="bgchange">
-    <center>
+    <div class="atasjudul">
     <?php
         include("koneksi.php");
                 if( !isset($_GET['id']) ){
@@ -274,7 +277,7 @@
 <?= $dataadmin['judul']; ?>
         </h1>
         <hr class="atas">
-        </center>
+        </div>
         <h4>
             Topik: 
         <?= $dataadmin['topik'];?>
