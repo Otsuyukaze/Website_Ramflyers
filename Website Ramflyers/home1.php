@@ -23,8 +23,6 @@ $(this).parent().find("button").slideToggle(function() {
 $(this).parent().find("ul").slideToggle(function() {
     document.getElementById("myUL").style.visibility ="hidden";
 });
-  
-    
 });
 });
 });
@@ -33,7 +31,16 @@ $(this).parent().find("ul").slideToggle(function() {
     document.getElementById("myUL").style.visibility ="visible";
 });
 });
-        })
+});
+$(document).ready(function() {
+        document.getElementById("searchbar").style.animation="none";
+            $(".blink").click(function(){
+            document.getElementById("searchbar").style.animation="blink 2s infinite";
+            });
+            $(".toggle-button").click(function(){
+            document.getElementById("searchbar").style.animation="none";
+            });
+        });
         </script>
         <script>
             function myFunction() {
@@ -473,6 +480,11 @@ $(this).parent().find("ul").slideToggle(function() {
             .headerspacing{
                 margin-left:843px;
             }
+            @keyframes blink{
+                0% {opacity:100%;}
+                50% {opacity:0%;}
+                100% {opacity:100%;}
+            }
 
         </style>
     </head>
@@ -499,8 +511,8 @@ $(this).parent().find("ul").slideToggle(function() {
             <a href="hub1.php">Hubungi Kami</a>
         </li>        
         <li>
-            <div class=searchbar>
-            <a class="toggle-button" href="#">
+            <div class=searchbar id="searchbar">
+            <a class="toggle-button" href="#searchbar">
                     <img src="search_button.png" width="26" height="26">
                 </a>
                         <div id="test">
@@ -553,7 +565,7 @@ $(this).parent().find("ul").slideToggle(function() {
 <br>
 <div class="tampilan">
     <hr>
-    <a href="community.html">
+    <a href="#searchbar" class="blink">
         <img src="tutorial.png" width="32%" height="50%" class="tutul">
     </a>
     <a href="info1.php">

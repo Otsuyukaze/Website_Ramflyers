@@ -17,22 +17,16 @@
 
 $(document).ready(function() {
             document.getElementById("test").style.visibility="hidden";
-            document.getElementById("searchbar").style.animation="none";
-            $(".blink").click(function(){
-            document.getElementById("searchbar").style.animation="blink 3s ease-in-out";
-            });
             $(".toggle-button").click(function() {
-$("input").parent().find("input").slideToggle(function() {
-    document.getElementById("").style.visibility ="visible";
+$(this).parent().find("input").slideToggle(function() {
+    document.getElementById("myInput").style.visibility ="visible";
     
-$("input").parent().find("button").slideToggle(function() {
+$(this).parent().find("button").slideToggle(function() {
     document.getElementById("submit").style.visibility ="visible";
     
-$("ul").parent().find("ul").slideToggle(function() {
+$(this).parent().find("ul").slideToggle(function() {
     document.getElementById("myUL").style.visibility ="hidden";
 });
-  
-    
 });
 });
 });
@@ -41,7 +35,16 @@ $(this).parent().find("ul").slideToggle(function() {
     document.getElementById("myUL").style.visibility ="visible";
 });
 });
-        })
+});
+$(document).ready(function() {
+        document.getElementById("searchbar").style.animation="none";
+            $(".blink").click(function(){
+            document.getElementById("searchbar").style.animation="blink 2s infinite";
+            });
+            $(".toggle-button").click(function(){
+            document.getElementById("searchbar").style.animation="none";
+            });
+        });
         </script>
         <script>
             function myFunction() {
@@ -476,9 +479,9 @@ $(this).parent().find("ul").slideToggle(function() {
                 list-style:lower-alpha;
             }
             @keyframes blink{
-                0% {opacity:0%;}
-                50% {opacity:100%;}
-                100% {opacity:0%;}
+                0% {opacity:100%;}
+                50% {opacity:0%;}
+                100% {opacity:100%;}
             }
         </style>
     </head>
@@ -506,7 +509,7 @@ $(this).parent().find("ul").slideToggle(function() {
         </li>        
         <li>
             <div class=searchbar id="searchbar">
-            <a class="toggle-button" href="#">
+            <a class="toggle-button" href="#searchbar">
                     <img src="search_button.png" width="26" height="26" >
                 </a>
                         <div id="test">
@@ -561,7 +564,7 @@ $(this).parent().find("ul").slideToggle(function() {
 <br>
 <div class="tampilan">
     <hr>
-    <a href="#" class="blink">
+    <a href="#searchbar" class="blink">
         <img src="tutorial.png" width="32%" height="50%" class="tutul">
     </a>
     <a href="info1.php">
