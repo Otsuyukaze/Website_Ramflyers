@@ -12,15 +12,20 @@ if( mysqli_num_rows($query) < 1 ){
 ?>
 <!DOCTYPE html>
 <head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
+</style>
     <style>
         fieldset{
             background-color:white;
-            font-family:"Nunito Sans";
             width:300px;
             position:absolute;
             top:50%;
             left:50%;
             transform:translate(-50%,-50%);
+        }
+        body{
+            font-family: 'Nunito Sans', sans-serif;
         }
         </style>
 </head>

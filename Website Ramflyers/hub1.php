@@ -54,6 +54,9 @@ $(this).parent().find("ul").slideToggle(function() {
 }
             
             </script>
+            <style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
+</style>
         <style>
             ::-webkit-scrollbar {
                 width: 10px;
@@ -71,7 +74,7 @@ $(this).parent().find("ul").slideToggle(function() {
                 max-width: 200%;
                 margin:auto;
                 background-image: url('tetrisblack.jpg');
-                font-family:"Nunito Sans";
+                font-family: 'Nunito Sans', sans-serif;
             }
             html{
                 scroll-behavior: smooth;
@@ -110,7 +113,6 @@ $(this).parent().find("ul").slideToggle(function() {
                 list-style: none;
                 padding:25px;
                 font-size: 20spx;
-                font-family:"Nunito Sans";
             }
             .forgodsake:hover{
                 background-color: rgb(0, 0, 0);
@@ -128,8 +130,7 @@ $(this).parent().find("ul").slideToggle(function() {
                 display: flex;
                 flex-direction: column;
                 filter:drop-shadow();
-                transition: 0.7s ease-in-out;
-                font-family:"Nunito Sans"; 
+                transition: 0.7s ease-in-out; 
             }
             .list:hover{
                 background-color:rgb(53, 54, 54);
@@ -217,7 +218,6 @@ $(this).parent().find("ul").slideToggle(function() {
                 height:50px;
                 line-height:30px;
                 width:20%;
-                font-family:"Nunito Sans";
                 text-align:center;
             }
             #submit:hover{
@@ -250,7 +250,6 @@ $(this).parent().find("ul").slideToggle(function() {
                 flex-direction: column;
                 filter:drop-shadow();
                 transition: 0.7s ease-in-out;
-                font-family:"Nunito Sans";
                 
             }
             nav ul li:hover{                
@@ -288,7 +287,6 @@ $(this).parent().find("ul").slideToggle(function() {
                 flex-direction: column;
                 filter:drop-shadow();
                 transition: 0.7s ease-in-out;
-                font-family:"Nunito Sans";
                 
             }
             li > a:only-child:after{

@@ -57,6 +57,9 @@ $(this).parent().find("ul").slideToggle(function() {
 }
             
             </script>
+            <style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
+</style>
         <style>
             .header{
                 z-index: 999;
@@ -84,6 +87,7 @@ $(this).parent().find("ul").slideToggle(function() {
                 margin:auto;
                 background-image: url('sakura2.png');
                 background-size: 1520px 540px;
+                font-family: 'Nunito Sans', sans-serif;
             }
             .list{
                 float:left;
@@ -98,7 +102,6 @@ $(this).parent().find("ul").slideToggle(function() {
                 flex-direction: column;
                 filter:drop-shadow();
                 transition: 0.7s ease-in-out;
-                font-family:"Nunito Sans";
                 
             }
             .list:hover{
@@ -133,7 +136,6 @@ $(this).parent().find("ul").slideToggle(function() {
                 font-size: 50px;
                 text-align: center;
                 position:absolute;
-                font-family: "Nunito Sans";
                 top: 50%; 
                 left: 50%;
                 transform: translate(-50%, -50%);
@@ -155,7 +157,6 @@ $(this).parent().find("ul").slideToggle(function() {
             .tampilan{
                 background-image: url('sakura.png');
                 background-size: 1515px 540px;
-                font-family: "Nunito Sans";
                 font-size: 40px;
                 padding:50px;
                 margin-top:-95px;
@@ -181,7 +182,6 @@ $(this).parent().find("ul").slideToggle(function() {
             }
             .ukuran{
                 font-size: 20px;
-                font-family: "Nunito Sans";
                 background-color: black;
                 color: white;
             }
@@ -265,7 +265,6 @@ $(this).parent().find("ul").slideToggle(function() {
                 border-color:pink;
                 border-width: 5px;;
                 border-radius: 10px 0 0 0;
-                font-family: "Nunito Sans";
                 padding:5px;
             }
             .searchbar #submit{
@@ -284,7 +283,6 @@ $(this).parent().find("ul").slideToggle(function() {
                 border-color: pink;
                 border-width: 5px;
                 border-radius: 0 0 10px 10px;
-                font-family: "Nunito Sans";
                 position:absolute;
                 left:7.4%;
                 top:100%;

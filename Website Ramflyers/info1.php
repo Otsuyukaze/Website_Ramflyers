@@ -52,6 +52,9 @@ $(this).parent().find("ul").slideToggle(function() {
 }
             
             </script>
+            <style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
+</style>
         <style>
             html{
                 scroll-behavior: smooth;
@@ -136,7 +139,6 @@ $(this).parent().find("ul").slideToggle(function() {
                 border-color:pink;
                 border-width: 5px;;
                 border-radius: 10px 0 0 0;
-                font-family: "Nunito Sans";
                 padding:5px;
             }
             .searchbar #submit{
@@ -155,7 +157,6 @@ $(this).parent().find("ul").slideToggle(function() {
                 border-color: pink;
                 border-width: 5px;
                 border-radius: 0 0 10px 10px;
-                font-family: "Nunito Sans";
                 position:absolute;
                 left:7.4%;
                 top:100%;
@@ -214,6 +215,7 @@ $(this).parent().find("ul").slideToggle(function() {
                 background-size: 1590px 1300px;
                 color: white;
                 scroll-behavior:smooth;
+                font-family: 'Nunito Sans', sans-serif;
             }
             .box{
                 box-sizing:border-box;
@@ -332,11 +334,9 @@ $(this).parent().find("ul").slideToggle(function() {
             }
             footer{
                 font-size: 20px;
-                font-family: "Nunito Sans";
             }
             .ukuran{
                 font-size: 20px;
-                font-family: "Nunito Sans";
                 background-color: black;
                 color: white;
             }

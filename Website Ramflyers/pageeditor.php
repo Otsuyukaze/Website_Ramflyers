@@ -1,9 +1,12 @@
 <html>
     <title>Page Editor | Ramflyers</title>
     <head>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
+</style>
         <style>
             body{
-                font-family:"Nunito Sans";
+                font-family: 'Nunito Sans', sans-serif;
             }
             .header {
                 margin:-10px 0 0 -8px;

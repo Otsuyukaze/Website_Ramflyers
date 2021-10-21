@@ -3,7 +3,9 @@
     <meta charset="UTF-8" />  
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
         <title>Form Register</title>
-
+        <style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
+</style>
         <style>
             @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');*{
                 box-sizing:border-box;
@@ -21,6 +23,7 @@
 }
 body{
     overflow:none;
+    font-family: 'Nunito Sans', sans-serif;
 }
 .floatAboveEverything {
     z-index: 16;

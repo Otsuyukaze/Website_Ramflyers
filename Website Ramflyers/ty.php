@@ -3,10 +3,14 @@
     <head>
         <title>Terima Kasih</title>
         <style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
+</style>
+        <style>
             body{
                 background: #141414;
                 overflow:hidden;
                 width: 100%;
+                font-family: 'Nunito Sans', sans-serif;
             }
             canvas{
                 position:absolute;
@@ -18,9 +22,8 @@
                 z-index: 99;
                 position: absolute;
                 top: 39%;
-                left: 14%;
+                left: 13%;
                 font-size: 55px;
-                font-family: Bahnschrift SemiBold;
                 text-shadow: -1px -1px 0 rgb(255, 0, 0), 1px -1px 0 rgb(0, 255, 0), -1px 1px 0 rgb(0, 60, 255), 1px 1px 0 rgb(255, 251, 0);
             }
             .f2{
@@ -28,9 +31,8 @@
                 z-index: 98;
                 position: absolute;
                 top: 54%;
-                left: 20%;
+                left: 19%;
                 font-size: 20px;
-                font-family: Bahnschrift SemiBold;
             }
             a{
                 text-decoration: none;
