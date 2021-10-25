@@ -402,7 +402,7 @@ $(this).parent().find("ul").slideToggle(function() {
 .form-control input:focus,
 .form-control input:valid{
     outline:0;
-    border-bottom-color:grey;
+    border-bottom-color:rgb(50,50,50);
 }
 .form-control label{
     position: absolute;
@@ -418,7 +418,7 @@ $(this).parent().find("ul").slideToggle(function() {
 }
 .form-control input:focus + label span,
 .form-control input:valid + label span {
-   color:grey;
+   color:rgb(50,50,50);
    transform: translateY(-30px);
 }
         </style>

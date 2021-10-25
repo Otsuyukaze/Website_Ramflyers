@@ -58,6 +58,7 @@ $(this).parent().find("ul").slideToggle(function() {
         <style>
             html{
                 scroll-behavior: smooth;
+                overflow-x:hidden;
             }
             .header{
                 z-index: 999;
@@ -427,6 +428,22 @@ $(this).parent().find("ul").slideToggle(function() {
             ::-webkit-scrollbar-thumb:hover {
                 background: #555; 
             }
+            .garis{
+                font-size:50px;
+                width:9000px;
+                position:relative;
+                animation:garis 10s infinite alternate;
+            }
+            .garisatas{
+                background:rgb(255,255,255);
+                border:thin solid white;
+                width:98%;
+                margin:0 0 0 1%;
+            }
+            @keyframes garis{
+                from{left:0px;}
+                to{left:-500px;}
+            }
         </style>
     </head>
     <body>
@@ -494,7 +511,7 @@ $(this).parent().find("ul").slideToggle(function() {
 </div>
         <br><br><br>
         <p id="ramflyers"></p><br><br><br>
-        <p class="sz">Ramflyers</p><hr style="border-color:white; width:98%;">
+        <p class="sz">Ramflyers</p><hr class="garisatas">
         <p class="g">Ramflyers adalah nama tim yang kami bentuk melalui nama buatan yaitu Ramfly Ramsend. Ramflyers sendiri sebenarnya terdiri dari 6 orang, yang mana terdapat murid dari kelas lain dan sekolah lain. Namun kami hanya berempat disini karena projek website kami ini terdiri dari kelas kami saja, XI RPL 1. Anggota Ramflyers pada XI RPL 1 hanya berempat dan jadi hanya ada kami saja. Kami juga mempunyai sosial media untuk tim ini, Instagram : @ramflyers.gaming, YouTube : Ramflyers.</p>
         <br><br><br><br>
         <div class="box">
@@ -505,11 +522,9 @@ $(this).parent().find("ul").slideToggle(function() {
         <p><a href="#richard" class="list2">> Richard Lee</a></p>
         <p><a href="#hendy" class="list2">> Hendy Tandika</a></p>
         </div>
-        <p>
-            <font size="400px">
-            - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        </font>
-        </p>
+        <div class="garis">
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+        </div>
         <p id="william"></p><br><br>
         <div class="william">
         <br><br><br><br><br><br><br>
