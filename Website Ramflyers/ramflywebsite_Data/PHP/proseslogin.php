@@ -5,7 +5,7 @@ if(isset($_POST['login']))
 
 $username=$_POST['username'];
 $password=md5($_POST['password']);
-$query = mysqli_query($db, "SELECT * FROM ramflyers where username='$username' and password='$password'");
+$query = mysqli_query($this->konek, "SELECT * FROM ramflyers where username='".$username."' and password='".$password."'");
 $check = mysqli_num_rows($query);
 
 if($check){

@@ -119,7 +119,7 @@
     Pesan Masuk
 </li> 
 </a>
-   <a href="loginadmin.php">
+   <a href="logout.php">
 <li class=header>
 Log Out
         </li>

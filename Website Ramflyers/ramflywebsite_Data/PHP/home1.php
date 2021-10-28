@@ -541,7 +541,7 @@ $(document).ready(function() {
         </a>
         <ul>
             <li class="list">
-        <a href="index.html">Log Out</a>
+        <a href="logout.php">Log Out</a>
         </li>
         </ul>
         </li> 

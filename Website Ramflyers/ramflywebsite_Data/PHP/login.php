@@ -1,3 +1,45 @@
+<?php
+require_once 'koneksi.php';
+
+class proses extends koneksi{
+    public function loginpetugas($username,$password){
+        $stmt = mysqli_query($this->konek, "SELECT * FROM ramflyers WHERE username = '" .$username. "' AND password = '".$password."'");
+        
+        return $stmt;
+    }
+}
+
+if(!session_id()) session_start();
+$proses = new proses;
+
+if(isset($_SESSION['id'])){
+    if($_SESSION['level']=="Admin"){
+    header('location:tampilanadmin.php');
+    } else{
+        header('location:home1.php');
+    }
+}
+if(isset($_POST['login'])){
+    $username = $proses->konek->real_escape_string($_POST['username']);
+    $password = $proses->konek->real_escape_string(md5($_POST['password']));
+    $masuk = $proses->loginpetugas($username,$password);
+
+    if($masuk->num_rows  > 0){
+        $data=mysqli_fetch_assoc($masuk);
+        if($data['level']=="Admin"){
+            header('location:tampilanadmin.php');
+            $_SESSION['id'] = $data['id'];
+            $_SESSION['level'] = $data['level'];
+        }
+        else{
+            header('location:home1.php');
+        }
+    }
+    else{
+        $_SESSION['error']="<script>alert('Username atau Password tidak valid')";
+    }
+}
+?>
 <html>
     <head>
     <meta charset="UTF-8" />  
@@ -182,7 +224,7 @@ input:hover[type=submit]{
             <source src="9convert.com - C418   Sweden  Minecraft Volume Alpha.mp3" type="audio/mp3">
         </audio>
         <div class="container">
-        <form action="proseslogin.php" method="post" class="floatAboveEverything"><br>
+        <form method="post" class="floatAboveEverything"><br>
             <h1>Form Login</h1>
             <div class="form-control">
                 <input type="text" name="username" autocomplete="off" required>
@@ -205,7 +247,7 @@ input:hover[type=submit]{
             <div class="waveWrapperInner bgBottom">
               <div class="wave waveBottom" style="background-image: url('../Assets/Image/Animated/wave-bot.png')"></div>
             </div>
-          </div>
+        </div>
           <script>
             
             const labels = document.querySelectorAll('.form-control label')
@@ -214,9 +256,6 @@ input:hover[type=submit]{
                 .join('')
             }
             )
-            
-                
             </script>
     </body>
-    </font>
 </html>
