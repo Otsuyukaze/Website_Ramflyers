@@ -1,12 +1,5 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>
-            Home | Ramflyers
-        </title>
-                
+    <header>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
         <script>
@@ -64,9 +57,6 @@ $(document).ready(function() {
 }
             
             </script>
-            <style>
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
-</style>
         <style>
             .header{
                 z-index: 999;
@@ -92,9 +82,10 @@ $(document).ready(function() {
             body{
                 max-width: 200%;
                 margin:auto;
-                background-image: url('../Assets/Image/Backgrounds/sakura2.png');
+                background-image: url('../Assets/Image/Backgrounds/background-1939128.jpg');
                 background-size: 1520px 540px;
                 font-family: 'Nunito Sans', sans-serif;
+                position: fixed;
             }
             .list{
                 float:left;
@@ -190,7 +181,11 @@ $(document).ready(function() {
                 font-size: 20px;
                 background-color: black;
                 color: white;
-                text-align:center;
+                text-align: center;
+                overflow: hidden;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
             }
             hr{
                 height: 2px;
@@ -340,43 +335,6 @@ $(document).ready(function() {
             #myInput{
                 float:left;
             }
-            .komentar{
-                color: black;
-            }
-            .kolomkomentar{
-                border-radius:5px;
-                background-color: rgb(252, 130, 151);
-                padding:10px;
-                font-size:16px;
-                margin:30px;
-                box-shadow:0 0 10px 0;
-                
-            }
-            input{
-                outline:none;
-                border-style:none none solid none;
-                border-width:2px;
-                border-color:black;
-                padding:5px;
-                width:320px;
-            }
-            textarea{
-                border-width:2px;
-                padding:5px;
-                border-color:black;
-                border-style:none none solid none;
-                outline:none;
-            }
-            input[type=submit]{
-                border-radius:3px;
-                outline:none;
-                border-width:0px;
-                padding:5px;
-                width:auto;
-            }
-            input[type=submit]:hover{
-                cursor:pointer;
-            }
             .overflow{
                 overflow-y:scroll;
                 height:500px;
@@ -484,181 +442,116 @@ $(document).ready(function() {
                 50% {opacity:0%;}
                 100% {opacity:100%;}
             }
-
+            .title {
+                margin-top: 15%;
+                margin-left: 25%;
+                width: 1000px;
+                color: rgb(255, 255, 255);
+                background-color: rgb(26, 26, 26);
+                border-radius: 5px;
+                border: white;
+                border-style: solid;
+            }
+            .vertical-menu {
+                width: 1004px;
+                margin-left: 25%;
+            }
+            .vertical-menu a {
+                background-color: rgb(68, 68, 68);
+                color: rgb(255, 255, 255);
+                display: block;
+                padding: 12px;
+                text-decoration: none;
+                text-align: center;
+            }
+            .vertical-menu a:hover {
+                background-color: rgb(59, 59, 59);
+                border: solid;
+                border-color: white;
+            }
         </style>
-    </head>
+    </header>
     <body>
-<div class="header">
-    <div>
-        <img class="img" src="../Assets/Image/Buttons 2.0/logo-removebg-preview.png" width="75px" height="75px">
-    </div>
-    <div class="ramflytomenu">
-        
-    <nav>
-    <ul>
-        <li class="forgodsake">
-            <b>Ramflyers</b>
-        </li>
-        <div class="headerspacing">
-        <li class="home">
-            <a href="home1.php">Home</a>
-        </li>
-        <li>
-            <a href="info1.php">Info</a>
-        </li>
-        <li>
-            <a href="hub1.php">Hubungi Kami</a>
-        </li>        
-        <li>
-            <div class=searchbar id="searchbar">
-            <a class="toggle-button" href="#searchbar">
-                    <img src="../Assets/Image/Buttons/search_button.png" width="26" height="26">
-                </a>
-                        <div id="test">
-                        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for tutorial">
-                      <button type="button" onclick="document.getElementById('myUL').style.visibility ='visible';" class="toggle-enter" id="submit">CARI</button>
-                    
-                      <ul id="myUL">
-                          <li><a href="#">Tutorial 1</a></li>
-                          <li><a href="#">Tutorial 2</a></li>
-                        
-                          <li><a href="#">Tutorial 3</a></li>
-                          <li><a href="#">Tutorial 4</a></li>
-                        
-                          <li><a href="#">Tutorial 5</a></li>
-                          <li><a href="#">Tutorial 6</a></li>
-                          <li><a href="#">Tutorial 7</a></li>
-                        </ul>
-                      </div>
+        <div class="header">
+            <div>
+                <img class="img" src="../Assets/Image/Buttons 2.0/logo-removebg-preview.png" width="75px" height="75px">
             </div>
+            <div class="ramflytomenu">
+                
+            <nav>
+            <ul>
+                <li class="forgodsake">
+                    <b>Ramflyers</b>
                 </li>
-
-        <li class="list">
-            
-        <a href="#">
-          <img src="../Assets/Image/Buttons/more_button.png" width="30" height="25">
-        </a>
-        <ul>
-            <li class="list">
-        <a href="../../index.html">Log Out</a>
-        </li>
-        </ul>
-        </li> 
-    </div>
-    </ul>
-    
-    </nav>
-</div>
-</div>
-<div>
-<div class="chinese">
-    <img class="chinese" src="../Assets/Image/Backgrounds/Wallpaper.jpg">
-</div>
-<div class="selamat">
-    Ramfly Ramsend Inc.
-</div>
-</div>
-<br>
-<br>
-<br>
-<br>
-<div class="tampilan">
-    <hr>
-    <a href="tutorial.html" class="blink">
-        <img src="../Assets/Image/Buttons 2.0/tutorial.png" width="32%" height="50%" class="tutul">
-    </a>
-    <a href="info1.php">
-        <img src="../Assets/Image/Buttons 2.0/info.png" width="32%" height="50%" class="tutul">
-    </a>
-    <a href="hub1.php">
-        <img src="../Assets/Image/Buttons 2.0/hubungi.png" width="32%" height="50%" class="tutul">
-    </a>
-    </div>
-
-    <div class=kolomkomentar>
-<b>
-            Kolom Komentar:
-</b>
-<div class="overflow">
-<div class="scroll">
-</p>
-        <?php
-        include("koneksi.php");
-        $query=mysqli_query($db,'SELECT * FROM komentar');
-        while($data=mysqli_fetch_array($query))
-        {
-            $nama = $data['nama'];
-            $subject= $data['subject'];
-            $pesan = $data['pesan'];
-            
-            echo '<div style="background-color:white;border-radius:5px;padding:10px;margin-bottom:10px;margin-right:10px;border-style:solid;border-color:black;">';
-            echo "<p>Dari <b>".$nama."</b>:<br><hr width=200px align=left>Komentar:<br><br><b> $subject </b><br><br><i>$pesan</i> <br><br/>";
-            echo "<a class=komentar title='Hapus Pesan' href='hapus.php?id=" .$data['id']."'>[Hapus Komentar]</a><br><a class=komentar href='edit.php?id=".$data['id']."'>[Edit Komentar]</a> <br/></p></div>";
-        }
-        ?>
-        </div>
-        </div>
-        <div class="space">
-<table>
-            <form action="simpan.php" method="POST">
-                <tr>
-                    <td>
-                        <label for="nama">
-                            Nama
-                        </td>
-                        <td>
-                            :
-                        </td>
-                    </label>
-                    <td>
-                        <input type="text" name="nama" placeholder="Nama Lengkap" style="text-align:left;" autocomplete="off">
-                    </td>
+                <div class="headerspacing">
+                <li class="home">
+                    <a href="home1.php">Home</a>
+                </li>
+                <li>
+                    <a href="info1.php">Info</a>
+                </li>
+                <li>
+                    <a href="hub1.php">Hubungi Kami</a>
+                </li>        
+                <li>
+                    <div class=searchbar id="searchbar">
+                    <a class="toggle-button" href="#searchbar">
+                            <img src="../Assets/Image/Buttons/search_button.png" width="26" height="26">
+                        </a>
+                                <div id="test">
+                                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for tutorial">
+                              <button type="button" onclick="document.getElementById('myUL').style.visibility ='visible';" class="toggle-enter" id="submit">CARI</button>
+                            
+                              <ul id="myUL">
+                                  <li><a href="#">Tutorial 1</a></li>
+                                  <li><a href="#">Tutorial 2</a></li>
+                                
+                                  <li><a href="#">Tutorial 3</a></li>
+                                  <li><a href="#">Tutorial 4</a></li>
+                                
+                                  <li><a href="#">Tutorial 5</a></li>
+                                  <li><a href="#">Tutorial 6</a></li>
+                                  <li><a href="#">Tutorial 7</a></li>
+                                </ul>
+                              </div>
+                    </div>
+                        </li>
+        
+                <li class="list">
                     
-                </tr>
-                <tr>
-                    <td>
-                        <label for="subject">
-                            Subject
-                        </td>
-                        <td>
-                            :
-                        </td>
-                    </label>
-                    <td>
-                        <input type="text" name="subject" placeholder="Judul Pesan" autocomplete="off">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="pesan">
-                            Comment
-                        </td>
-                        <td>
-                            :
-                        </td>
-                    </label>
-                    <td>
-                        <textarea placeholder="Masukan Komentar Anda disini" cols=38 rows=3 name="pesan" required></textarea>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan=3>
-                    <input type="submit" value="Masukkan Komentar" name="daftar">
-                    </td>
-                </tr>
-            </form>
-        </table>
-        <br>
-        </fieldset>
-        <p>
+                <a href="#">
+                  <img src="../Assets/Image/Buttons/more_button.png" width="30" height="25">
+                </a>
+                <ul>
+                    <li class="list">
+                <a href="../../index.html">Log Out</a>
+                </li>
+                </ul>
+                </li> 
+            </div>
+            </ul>
+            </nav>
         </div>
         </div>
+        <div class="title">
+            <h1 align="center">
+                Tutorial
+            </h1>
+        </div>
+            <div class="vertical-menu">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                <a href="#">Link 4</a>
+                <a href="#">Link 5</a>
+                <a href="#">Link 6</a>
+                <a href="#">Link 7</a>
+                <a href="#">Link 8</a>
+              </div>
+        <div class="ukuran">
+            <br>
+            &copy;2021 Ramfly Ramsend Incorporation. Ramflyers and the Ramflyers Logo are among our registered and unregistered trademarks in Southeast Asia and other countries.
+            <br><br>
     </div>
-</div>
-<div class="ukuran">
-        <br>
-        ©2021 Ramfly Ramsend Incorporation. Ramflyers and the Ramflyers Logo are among our registered and unregistered trademarks in Southeast Asia and other countries.
-        <br><br>
-</div>
     </body>
-    </html>
+</html>
