@@ -75,6 +75,7 @@ $(this).parent().find("ul").slideToggle(function() {
                 margin:auto;
                 background-image: url('../Assets/Image/Backgrounds/tetrisblack.jpg');
                 font-family: 'Nunito Sans', sans-serif;
+                overflow-x: hidden;
             }
             html{
                 scroll-behavior: smooth;
@@ -344,6 +345,8 @@ $(this).parent().find("ul").slideToggle(function() {
                 font-family: "Nunito Sans";
                 background-color: black;
                 color: white;
+                text-align: center;
+                margin-top: 50%;
             }
             .container{
     background-color:transparent;
@@ -476,7 +479,7 @@ $(this).parent().find("ul").slideToggle(function() {
                 </a>
                 <ul>
                     <li class="list">
-                <a href="index.html">Log Out</a>
+                <a href="../../index.html">Log Out</a>
                 </li>
                 </ul>
                 </li> 
@@ -495,6 +498,7 @@ $(this).parent().find("ul").slideToggle(function() {
             <form method="POST" action="simpan1.php">
             <div class="box">
                 <h1>Fill Here</h1>
+                <br>
                 <div class="form-control">
                 <input type="text" name="nama" autocomplete="off" required><label>Your Name</label>
                 </div><div class="form-control">
@@ -510,14 +514,14 @@ $(this).parent().find("ul").slideToggle(function() {
             </div>
             </div>
             <br><br><br>
-        <div class="ukuran">
             </form>
 </div>
+</div>
+        <div class="ukuran">
                 <br>
                 &copy;2021 Ramfly Ramsend Incorporation. Ramflyers and the Ramflyers Logo are among our registered and unregistered trademarks in Southeast Asia and other countries.
                 <br><br>
         </div>
-</div>
         <script>
             
             const labels = document.querySelectorAll('.form-control label')

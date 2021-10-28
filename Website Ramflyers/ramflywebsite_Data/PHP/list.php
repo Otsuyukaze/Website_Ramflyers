@@ -185,7 +185,7 @@ Log Out
             $kategori = $dataadmin['kategori'];
 
             echo '<tr><td class="under">'.$judul.'</td><td class="under">' .$topik.'</td><td class="under">'.$kategori.'</td>';
-            echo '<td class="under"><a class=komentar title="Hapus Tutorial" href="hapustutorial.php?id=' .$dataadmin['id'].'"><img class="button" src="delete_button_black.png"></a></td><td class="under"><a class=komentar href="edittutorial.php?id='.$dataadmin['id'].'"><img class="button" src="edit_button_black.png"></a></td><td><a href="pageeditor.php?id=' .$dataadmin['id'].'">Edit Page</a></td></div>';
+            echo '<td class="under"><a class=komentar title="Hapus Tutorial" href="hapustutorial.php?id=' .$dataadmin['id'].'"><img class="button" src="../Assets/Image/Buttons/delete_button_black.png"></a></td><td class="under"><a class=komentar href="edittutorial.php?id='.$dataadmin['id'].'"><img class="button" src="../Assets/Image/Buttons/edit_button_black.png"></a></td><td><a href="pageeditor.php?id=' .$dataadmin['id'].'">Edit Page</a></td></div>';
         }
         ?>
         </table>

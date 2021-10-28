@@ -478,7 +478,7 @@ $(document).ready(function() {
                 background: #555; 
             }
             .headerspacing{
-                margin-left:843px;
+                margin-left:835px;
             }
             @keyframes blink{
                 0% {opacity:100%;}
@@ -541,7 +541,7 @@ $(document).ready(function() {
         </a>
         <ul>
             <li class="list">
-        <a href="index.html">Log Out</a>
+        <a href="../../index.html">Log Out</a>
         </li>
         </ul>
         </li> 
