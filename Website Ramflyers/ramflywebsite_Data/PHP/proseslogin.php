@@ -31,14 +31,15 @@ if($check){
             .bg {
                 border-radius: 5px;
                 background-color: coral;
-                width:30%;
+                width: 30%;
                 padding: 15px;
                 box-shadow: -10px 10px 0 0 black;
                 font-family: "Franklin Gothic Book";
                 font-size: 20px;
                 text-decoration: none;
                 color: inherit;
-                margin-left:120px;
+                margin-left: 5%;
+                margin-right: 5%;
             }
 
             .color {
@@ -48,7 +49,7 @@ if($check){
                 font-family: "Berlin Sans FB";
                 margin-left: 270px;
                 margin-right: 270px;
-                text-align:center;
+                text-align: center;
             }
 
             body {

@@ -109,7 +109,6 @@ $(document).ready(function() {
                 flex-direction: column;
                 filter:drop-shadow();
                 transition: 0.7s ease-in-out;
-                
             }
             .list:hover{
                 background-color:rgb(53, 54, 54);
@@ -478,7 +477,7 @@ $(document).ready(function() {
                 background: #555; 
             }
             .headerspacing{
-                margin-left:843px;
+                margin-left:835px;
             }
             @keyframes blink{
                 0% {opacity:100%;}
@@ -565,7 +564,7 @@ $(document).ready(function() {
 <br>
 <div class="tampilan">
     <hr>
-    <a href="#searchbar" class="blink">
+    <a href="tutorial.html" class="blink">
         <img src="../Assets/Image/Buttons 2.0/tutorial.png" width="32%" height="50%" class="tutul">
     </a>
     <a href="info1.php">
